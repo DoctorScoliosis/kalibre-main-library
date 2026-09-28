@@ -1,6 +1,6 @@
 # Kalibre Main Library
 
-Ready-made datasets for [Kalibre](https://github.com/DoctorScoliosis/kalibre-kanary), the adaptive typing trainer: public-domain books, cut into passages and word counts that Kalibre types from.
+Ready-made datasets for [Kalibre](https://github.com/DoctorScoliosis/kalibre), the adaptive typing trainer: public-domain books, cut into passages and word counts that Kalibre types from.
 
 Kalibre itself only ships a small starter. Everything else lives here, so a clone of Kalibre stays small and the website only downloads what someone asks for.
 
