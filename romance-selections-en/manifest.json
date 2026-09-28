@@ -1,0 +1,190 @@
+{
+  "kalibreDataset": 1,
+  "id": "romance-selections-en",
+  "name": "Romance Selections",
+  "version": "2026-09-28",
+  "language": "en",
+  "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+  "source": {
+    "type": "gutenberg",
+    "ids": [
+      17460,
+      60,
+      67979,
+      45,
+      1260,
+      768,
+      9182,
+      105,
+      158,
+      121,
+      141,
+      145,
+      16389,
+      583
+    ],
+    "fetchedAt": "2026-09-28"
+  },
+  "works": [
+    {
+      "id": "pg17460",
+      "title": "Lorna Doone: A Romance of Exmoor",
+      "author": "R. D. Blackmore",
+      "translator": null,
+      "file": "works/pg17460.txt",
+      "passages": "passages/pg17460.json",
+      "sha256": "3a1274eafb2c6d6c839bd7bbada1cdfb39d10b698c73665b95022bc34f4af0fb",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/17460/pg17460.txt",
+      "wordCount": 265041
+    },
+    {
+      "id": "pg60",
+      "title": "The Scarlet Pimpernel",
+      "author": "Baroness Emmuska Orczy Orczy",
+      "translator": null,
+      "file": "works/pg60.txt",
+      "passages": "passages/pg60.json",
+      "sha256": "3ee02c64f9d56dcaf6e08320a84c0e4cad4cfcdbc677f59f830066092e5bac90",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/60/pg60.txt",
+      "wordCount": 83057
+    },
+    {
+      "id": "pg67979",
+      "title": "The Blue Castle: a novel",
+      "author": "L. M. Montgomery",
+      "translator": null,
+      "file": "works/pg67979.txt",
+      "passages": "passages/pg67979.json",
+      "sha256": "ac858b3b20f1e8769eeb9920003480f8a4c03473abfc2ab8be1597812248981a",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/67979/pg67979.txt",
+      "wordCount": 65969
+    },
+    {
+      "id": "pg45",
+      "title": "Anne of Green Gables",
+      "author": "L. M. Montgomery",
+      "translator": null,
+      "file": "works/pg45.txt",
+      "passages": "passages/pg45.json",
+      "sha256": "e1b5d4b3327b0449ef02382f9f7edcb78db554f62b55bede061d7fcd06d59ed8",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/45/pg45.txt",
+      "wordCount": 99476
+    },
+    {
+      "id": "pg1260",
+      "title": "Jane Eyre: An Autobiography",
+      "author": "Charlotte Brontë",
+      "translator": null,
+      "file": "works/pg1260.txt",
+      "passages": "passages/pg1260.json",
+      "sha256": "9e9a9b36869f15eb82e9bebc8345e35b796d358c2b2e23ee0caa8bd563f7d804",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/1260/pg1260.txt",
+      "wordCount": 174067
+    },
+    {
+      "id": "pg768",
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "translator": null,
+      "file": "works/pg768.txt",
+      "passages": "passages/pg768.json",
+      "sha256": "ee999a98c2d545945a11a65488746ea80cd30d5283b91c91fd6c38755cf6c3b1",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/768/pg768.txt",
+      "wordCount": 112984
+    },
+    {
+      "id": "pg9182",
+      "title": "Villette",
+      "author": "Charlotte Brontë",
+      "translator": null,
+      "file": "works/pg9182.txt",
+      "passages": "passages/pg9182.json",
+      "sha256": "36a63fb3b949846933a3bc2143bd741168347eba7d3585adc1cf563517ef9747",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/9182/pg9182.txt",
+      "wordCount": 187198
+    },
+    {
+      "id": "pg105",
+      "title": "Persuasion",
+      "author": "Jane Austen",
+      "translator": null,
+      "file": "works/pg105.txt",
+      "passages": "passages/pg105.json",
+      "sha256": "3761a8e37a22fdd9942dade83e2e6b09d3424cf9d1beddf9e71d6189649fa7b9",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/105/pg105.txt",
+      "wordCount": 78280
+    },
+    {
+      "id": "pg158",
+      "title": "Emma",
+      "author": "Jane Austen",
+      "translator": null,
+      "file": "works/pg158.txt",
+      "passages": "passages/pg158.json",
+      "sha256": "60ec0222ebdb75c81163d499c72918c4c4eabc7d12e55306b91246e939fbe83a",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/158/pg158.txt",
+      "wordCount": 145146
+    },
+    {
+      "id": "pg121",
+      "title": "Northanger Abbey",
+      "author": "Jane Austen",
+      "translator": null,
+      "file": "works/pg121.txt",
+      "passages": "passages/pg121.json",
+      "sha256": "6a5e114b0eb4c9201aea2fa3c7271352e60b3b7cdfff51e425760ba8419c34ef",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/121/pg121.txt",
+      "wordCount": 75815
+    },
+    {
+      "id": "pg141",
+      "title": "Mansfield Park",
+      "author": "Jane Austen",
+      "translator": null,
+      "file": "works/pg141.txt",
+      "passages": "passages/pg141.json",
+      "sha256": "6436893bd732e2e96c89b86e017643727a5608a9fe14c7ba1e0fbdecaf46872d",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/141/pg141.txt",
+      "wordCount": 156680
+    },
+    {
+      "id": "pg145",
+      "title": "Middlemarch",
+      "author": "George Eliot",
+      "translator": null,
+      "file": "works/pg145.txt",
+      "passages": "passages/pg145.json",
+      "sha256": "0bb44fd05696d6107802016eb72fd2a78fae7834a787ed463fee88012ca45f4a",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/145/pg145.txt",
+      "wordCount": 298370
+    },
+    {
+      "id": "pg16389",
+      "title": "The Enchanted April",
+      "author": "Elizabeth Von Arnim",
+      "translator": null,
+      "file": "works/pg16389.txt",
+      "passages": "passages/pg16389.json",
+      "sha256": "10cf64bf727f6e702af1bfed37f1be1c851182c2eacb7ee7cc3e909e82669420",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/16389/pg16389.txt",
+      "wordCount": 75708
+    },
+    {
+      "id": "pg583",
+      "title": "The Woman in White",
+      "author": "Wilkie Collins",
+      "translator": null,
+      "file": "works/pg583.txt",
+      "passages": "passages/pg583.json",
+      "sha256": "9b636bc2cbc6a828ca51ed3bdcea1c3e72df511ec8a1b41d1bb0286f7502118f",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/583/pg583.txt",
+      "wordCount": 237910
+    }
+  ],
+  "derived": {
+    "passageIndex": "passage-index.json",
+    "frequencies": "frequencies.json",
+    "normaliserVersion": 3,
+    "maxPerCategory": null
+  }
+}

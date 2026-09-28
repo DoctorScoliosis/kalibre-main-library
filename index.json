@@ -86,6 +86,47 @@
       "passages": 87672,
       "bytes": 38831258,
       "textBytes": 11174060
+    },
+    {
+      "id": "romance-selections-en",
+      "path": "romance-selections-en/manifest.json",
+      "name": "Romance Selections",
+      "kind": "books",
+      "language": "en",
+      "version": "2026-09-28",
+      "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+      "authors": [
+        "R. D. Blackmore",
+        "Baroness Emmuska Orczy Orczy",
+        "L. M. Montgomery",
+        "Charlotte Brontë",
+        "Emily Brontë",
+        "Jane Austen",
+        "George Eliot",
+        "Elizabeth Von Arnim",
+        "Wilkie Collins"
+      ],
+      "titles": [
+        "Lorna Doone: A Romance of Exmoor",
+        "The Scarlet Pimpernel",
+        "The Blue Castle: a novel",
+        "Anne of Green Gables",
+        "Jane Eyre: An Autobiography",
+        "Wuthering Heights",
+        "Villette",
+        "Persuasion",
+        "Emma",
+        "Northanger Abbey",
+        "Mansfield Park",
+        "Middlemarch",
+        "The Enchanted April",
+        "The Woman in White"
+      ],
+      "works": 14,
+      "quotes": 0,
+      "passages": 98985,
+      "bytes": 48138786,
+      "textBytes": 11574694
     }
   ]
 }
