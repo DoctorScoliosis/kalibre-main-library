@@ -1,0 +1,142 @@
+{
+  "kalibreDataset": 1,
+  "id": "gutenberg-classics-en",
+  "name": "Gutenberg classics",
+  "version": "2026-09-25",
+  "language": "en",
+  "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+  "source": {
+    "type": "gutenberg",
+    "ids": [
+      64317,
+      1513,
+      98,
+      5200,
+      2600,
+      28054,
+      1080,
+      33,
+      161,
+      53419
+    ],
+    "fetchedAt": "2026-09-25"
+  },
+  "works": [
+    {
+      "id": "pg64317",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "translator": null,
+      "file": "works/pg64317.txt",
+      "passages": "passages/pg64317.json",
+      "sha256": "878d994e1ef5ca614d3b74f606ecf47efeed7911f8b6b901258e8c26c6f72c15",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/64317/pg64317.txt",
+      "wordCount": 46063
+    },
+    {
+      "id": "pg1513",
+      "title": "Romeo and Juliet",
+      "author": "William Shakespeare",
+      "translator": null,
+      "file": "works/pg1513.txt",
+      "passages": "passages/pg1513.json",
+      "sha256": "26121ce1c36ef77bc1ed65730f2cc775e969e979e4c305b7bf3a2e5b9ecfd1b1",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/1513/pg1513.txt",
+      "wordCount": 20275
+    },
+    {
+      "id": "pg98",
+      "title": "A Tale of Two Cities",
+      "author": "Charles Dickens",
+      "translator": null,
+      "file": "works/pg98.txt",
+      "passages": "passages/pg98.json",
+      "sha256": "d5c8a50c6c41c57f454d8682a1612b15e1c3199428d5983f4a76765276bf7c1a",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/98/pg98.txt",
+      "wordCount": 131674
+    },
+    {
+      "id": "pg5200",
+      "title": "Metamorphosis",
+      "author": "Franz Kafka",
+      "translator": "David Wyllie",
+      "file": "works/pg5200.txt",
+      "passages": "passages/pg5200.json",
+      "sha256": "7fbc700ea193e535571d24c3c3c4b6c1fec18b9876a44e3b2bc090e73e535d39",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/5200/pg5200.txt",
+      "wordCount": 21932
+    },
+    {
+      "id": "pg2600",
+      "title": "War and Peace",
+      "author": "graf Leo Tolstoy",
+      "translator": "Aylmer Maude",
+      "file": "works/pg2600.txt",
+      "passages": "passages/pg2600.json",
+      "sha256": "448d2cf1e09524ed6ee3d99d5a24e916eb8c1da8541c239ea110f8380cc68aa1",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/2600/pg2600.txt",
+      "wordCount": 549878
+    },
+    {
+      "id": "pg28054",
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "Constance Garnett",
+      "file": "works/pg28054.txt",
+      "passages": "passages/pg28054.json",
+      "sha256": "376cf5c0caf66d10529b73e3a06eebd7744c1f1f0d4b8dcf37070bf3335e4174",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/28054/pg28054.txt",
+      "wordCount": 336776
+    },
+    {
+      "id": "pg1080",
+      "title": "A Modest Proposal",
+      "author": "Jonathan Swift",
+      "translator": null,
+      "file": "works/pg1080.txt",
+      "passages": "passages/pg1080.json",
+      "sha256": "27c4b4e4b30ef26426c0476da98b0a99204cd09a7fdd6bfdcac821b6ca9fb7ff",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/1080/pg1080.txt",
+      "wordCount": 3412
+    },
+    {
+      "id": "pg33",
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "translator": null,
+      "file": "works/pg33.txt",
+      "passages": "passages/pg33.json",
+      "sha256": "d9b71d48f4ba4afdb6f0df7160ea4a7cdc3982b6b4de39032062232a5d57618f",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/33/pg33.txt",
+      "wordCount": 82237
+    },
+    {
+      "id": "pg161",
+      "title": "Sense and Sensibility",
+      "author": "Jane Austen",
+      "translator": null,
+      "file": "works/pg161.txt",
+      "passages": "passages/pg161.json",
+      "sha256": "3c629854fe7e49d2665a7fd52f9bc5d2bbcbf620a08ff5260958e47040ea427c",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/161/pg161.txt",
+      "wordCount": 113394
+    },
+    {
+      "id": "pg53419",
+      "title": "Twenty-Five Ghost Stories",
+      "author": null,
+      "translator": null,
+      "file": "works/pg53419.txt",
+      "passages": "passages/pg53419.json",
+      "sha256": "9a400db70706289967e6bcfe6e5a2511baae3dd37efeb907afee44d720f0b614",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/53419/pg53419.txt",
+      "wordCount": 52784
+    }
+  ],
+  "derived": {
+    "passageIndex": "passage-index.json",
+    "frequencies": "frequencies.json",
+    "normaliserVersion": 3,
+    "maxPerCategory": null
+  }
+}

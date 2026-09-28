@@ -1,0 +1,91 @@
+{
+  "kalibreDatasetIndex": 1,
+  "library": {
+    "name": "kalibre main library",
+    "description": "Public-domain books for Kalibre."
+  },
+  "datasets": [
+    {
+      "id": "gutenberg-classics-en",
+      "path": "gutenberg-classics-en/manifest.json",
+      "name": "Gutenberg classics",
+      "kind": "books",
+      "language": "en",
+      "version": "2026-09-25",
+      "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+      "authors": [
+        "F. Scott Fitzgerald",
+        "William Shakespeare",
+        "Charles Dickens",
+        "Franz Kafka",
+        "graf Leo Tolstoy",
+        "Fyodor Dostoyevsky",
+        "Jonathan Swift",
+        "Nathaniel Hawthorne",
+        "Jane Austen"
+      ],
+      "titles": [
+        "The Great Gatsby",
+        "Romeo and Juliet",
+        "A Tale of Two Cities",
+        "Metamorphosis",
+        "War and Peace",
+        "The Brothers Karamazov",
+        "A Modest Proposal",
+        "The Scarlet Letter",
+        "Sense and Sensibility",
+        "Twenty-Five Ghost Stories"
+      ],
+      "works": 10,
+      "quotes": 0,
+      "passages": 69774,
+      "bytes": 31179759,
+      "textBytes": 7770604
+    },
+    {
+      "id": "henry-james-en",
+      "path": "henry-james-en/manifest.json",
+      "name": "Extended Selections of Henry James",
+      "kind": "books",
+      "language": "en",
+      "version": "2026-09-28",
+      "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+      "authors": [
+        "Henry James"
+      ],
+      "titles": [
+        "The American",
+        "The Portrait of a Lady — Volume 1",
+        "The Portrait of a Lady — Volume 2",
+        "Italian Hours",
+        "The Ambassadors",
+        "The Letters of Henry James (Vol. I)",
+        "The Letters of Henry James (Vol. II)",
+        "In the Cage",
+        "English Hours",
+        "The Lesson of the Master",
+        "The American scene",
+        "Daisy Miller: A Study",
+        "Confidence",
+        "Washington Square",
+        "The Diary of a Man of Fifty",
+        "The Death of the Lion",
+        "Notes of a Son and Brother",
+        "The Tragic Muse",
+        "The Coxon Fund",
+        "The Marriages",
+        "The Sense of the Past",
+        "Picture and Text",
+        "The Reverberator",
+        "The Finer Grain",
+        "The Point of View",
+        "Watch and ward"
+      ],
+      "works": 26,
+      "quotes": 0,
+      "passages": 87672,
+      "bytes": 38831258,
+      "textBytes": 11174060
+    }
+  ]
+}
