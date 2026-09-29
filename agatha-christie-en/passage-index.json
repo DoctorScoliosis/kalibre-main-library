@@ -1,0 +1,121 @@
+{
+  "pg65238": {
+    "short": 1938,
+    "medium": 1707,
+    "long": 279,
+    "huge": 172,
+    "massive": 22
+  },
+  "pg69087": {
+    "short": 1813,
+    "medium": 1555,
+    "long": 260,
+    "huge": 165,
+    "massive": 24
+  },
+  "pg863": {
+    "short": 1285,
+    "medium": 1285,
+    "long": 232,
+    "huge": 147,
+    "massive": 20
+  },
+  "pg1155": {
+    "short": 2046,
+    "medium": 1781,
+    "long": 348,
+    "huge": 163,
+    "massive": 36
+  },
+  "pg61262": {
+    "short": 1200,
+    "medium": 1196,
+    "long": 247,
+    "huge": 153,
+    "massive": 27
+  },
+  "pg58866": {
+    "short": 1448,
+    "medium": 1318,
+    "long": 249,
+    "huge": 104,
+    "massive": 11
+  },
+  "pg61168": {
+    "short": 2086,
+    "medium": 1864,
+    "long": 405,
+    "huge": 244,
+    "massive": 64
+  },
+  "pg70114": {
+    "short": 1296,
+    "medium": 1312,
+    "long": 258,
+    "huge": 192,
+    "massive": 37
+  },
+  "pg72824": {
+    "short": 1692,
+    "medium": 1507,
+    "long": 263,
+    "huge": 151,
+    "massive": 21
+  },
+  "pg75288": {
+    "short": 1776,
+    "medium": 1477,
+    "long": 197,
+    "huge": 128,
+    "massive": 16
+  },
+  "pg67173": {
+    "short": 72,
+    "medium": 86,
+    "long": 18,
+    "huge": 10,
+    "massive": 2
+  },
+  "pg67160": {
+    "short": 93,
+    "medium": 91,
+    "long": 20,
+    "huge": 9,
+    "massive": 3
+  },
+  "pg66446": {
+    "short": 111,
+    "medium": 109,
+    "long": 25,
+    "huge": 11,
+    "massive": 0
+  },
+  "pg78084": {
+    "short": 2347,
+    "medium": 2024,
+    "long": 379,
+    "huge": 275,
+    "massive": 65
+  },
+  "pg78220": {
+    "short": 1750,
+    "medium": 1553,
+    "long": 221,
+    "huge": 157,
+    "massive": 22
+  },
+  "pg78342": {
+    "short": 1700,
+    "medium": 1620,
+    "long": 241,
+    "huge": 168,
+    "massive": 22
+  },
+  "pg78262": {
+    "short": 3140,
+    "medium": 2509,
+    "long": 399,
+    "huge": 310,
+    "massive": 67
+  }
+}

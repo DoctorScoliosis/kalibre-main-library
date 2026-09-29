@@ -1,0 +1,226 @@
+{
+  "kalibreDataset": 1,
+  "id": "agatha-christie-en",
+  "name": "Agatha Christie's Public Domain Works",
+  "version": "2026-09-29",
+  "language": "en",
+  "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+  "source": {
+    "type": "gutenberg",
+    "ids": [
+      65238,
+      69087,
+      863,
+      1155,
+      61262,
+      58866,
+      61168,
+      70114,
+      72824,
+      75288,
+      67173,
+      67160,
+      66446,
+      78084,
+      78220,
+      78342,
+      78262
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  "works": [
+    {
+      "id": "pg65238",
+      "title": "The Secret of Chimneys",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg65238.txt",
+      "passages": "passages/pg65238.json",
+      "sha256": "89fa0e80ea81699f0ba780701ecd7b3dc378f256335a7f8fcce65c1424f0de6b",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/65238/pg65238.txt",
+      "wordCount": 72099
+    },
+    {
+      "id": "pg69087",
+      "title": "The murder of Roger Ackroyd",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg69087.txt",
+      "passages": "passages/pg69087.json",
+      "sha256": "e82fa0a0530100182b7dec1a0e936f7999bf3a660a6f6a4f3550d4bf91bf9517",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/69087/pg69087.txt",
+      "wordCount": 67119
+    },
+    {
+      "id": "pg863",
+      "title": "The Mysterious Affair at Styles",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg863.txt",
+      "passages": "passages/pg863.json",
+      "sha256": "947286888e1354cd4953e27e1f963f295fa2a72dbfa460f107785775d4b43dff",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/863/pg863.txt",
+      "wordCount": 53744
+    },
+    {
+      "id": "pg1155",
+      "title": "The Secret Adversary",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg1155.txt",
+      "passages": "passages/pg1155.json",
+      "sha256": "fb33bf5a61cae6624fd0e469db7cb15bc085a809958c47f58b9e12f3c8b8ccb4",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/1155/pg1155.txt",
+      "wordCount": 71611
+    },
+    {
+      "id": "pg61262",
+      "title": "Poirot Investigates",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg61262.txt",
+      "passages": "passages/pg61262.json",
+      "sha256": "568ff274c09b59741e0f363e1a8e4c2872a959623c17a25e76196485ae9fbcc7",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/61262/pg61262.txt",
+      "wordCount": 49658
+    },
+    {
+      "id": "pg58866",
+      "title": "The Murder on the Links",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg58866.txt",
+      "passages": "passages/pg58866.json",
+      "sha256": "a16f69a1f570a1fc1636bafc0a4c297b3be3ab9bc87576c5ca78c0e9db90873c",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/58866/pg58866.txt",
+      "wordCount": 59490
+    },
+    {
+      "id": "pg61168",
+      "title": "The Man in the Brown Suit",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg61168.txt",
+      "passages": "passages/pg61168.json",
+      "sha256": "4644b28102f4038ef0b4aceec3b33baafdabb7f1cc920e79572faa970ac680db",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/61168/pg61168.txt",
+      "wordCount": 72295
+    },
+    {
+      "id": "pg70114",
+      "title": "The Big Four",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg70114.txt",
+      "passages": "passages/pg70114.json",
+      "sha256": "9652da51b55e0be4349935ba407e1579508b712f0561cb2ab07cc3be91911871",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/70114/pg70114.txt",
+      "wordCount": 53433
+    },
+    {
+      "id": "pg72824",
+      "title": "The mystery of the Blue Train",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg72824.txt",
+      "passages": "passages/pg72824.json",
+      "sha256": "02e1be1fb82ccd30e104e6c5b62c684f24f802a9139485708a6fae363a095756",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/72824/pg72824.txt",
+      "wordCount": 66074
+    },
+    {
+      "id": "pg75288",
+      "title": "The Seven Dials mystery",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg75288.txt",
+      "passages": "passages/pg75288.json",
+      "sha256": "4c18470797c1bf9b638cc4eaba5116f6e93c7f38946a31cf077f41000c62bc43",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/75288/pg75288.txt",
+      "wordCount": 61683
+    },
+    {
+      "id": "pg67173",
+      "title": "The Missing Will",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg67173.txt",
+      "passages": "passages/pg67173.json",
+      "sha256": "a0b8a0f8c5b7378ecbaa8815e12bf1a778dff1432155bb8d18595f728b7ecdda",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/67173/pg67173.txt",
+      "wordCount": 3121
+    },
+    {
+      "id": "pg67160",
+      "title": "The Hunter's Lodge Case",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg67160.txt",
+      "passages": "passages/pg67160.json",
+      "sha256": "fd77fd8ae72c7782aa21f5547a049cf548b7e964f5763a2388aee0d7bfa37405",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/67160/pg67160.txt",
+      "wordCount": 4141
+    },
+    {
+      "id": "pg66446",
+      "title": "The Plymouth Express Affair",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg66446.txt",
+      "passages": "passages/pg66446.json",
+      "sha256": "4f64798fbcb2f903666a87899c70d1b9e93243a14555a38dae7df56a637e9ca0",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/66446/pg66446.txt",
+      "wordCount": 4717
+    },
+    {
+      "id": "pg78084",
+      "title": "The mysterious Mr. Quin",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg78084.txt",
+      "passages": "passages/pg78084.json",
+      "sha256": "a1617fe5f46c1b053a36a826ef8a28bd72f11a5471b0aa6ed2dd714013276b8f",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/78084/pg78084.txt",
+      "wordCount": 74741
+    },
+    {
+      "id": "pg78220",
+      "title": "Murder at the vicarage",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg78220.txt",
+      "passages": "passages/pg78220.json",
+      "sha256": "a53d0c66cb708c750b1cd2fb142dcbf8c603deffe43f71a8219662fbbd55c206",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/78220/pg78220.txt",
+      "wordCount": 66468
+    },
+    {
+      "id": "pg78342",
+      "title": "Partners in crime",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg78342.txt",
+      "passages": "passages/pg78342.json",
+      "sha256": "5a073a8ee6fe3187b26093c6fecba9e474975ae9f18568cc37148ff33ffbe230",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/78342/pg78342.txt",
+      "wordCount": 66332
+    },
+    {
+      "id": "pg78262",
+      "title": "Giants' bread",
+      "author": "Agatha Christie",
+      "translator": null,
+      "file": "works/pg78262.txt",
+      "passages": "passages/pg78262.json",
+      "sha256": "d80e47b3e935a5961c4335e3459012f30973b750fe149efe3caafd73ae912b2c",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/78262/pg78262.txt",
+      "wordCount": 95541
+    }
+  ],
+  "derived": {
+    "passageIndex": "passage-index.json",
+    "frequencies": "frequencies.json",
+    "normaliserVersion": 3,
+    "maxPerCategory": null
+  }
+}

@@ -6,6 +6,42 @@
   },
   "datasets": [
     {
+      "id": "agatha-christie-en",
+      "path": "agatha-christie-en/manifest.json",
+      "name": "Agatha Christie's Public Domain Works",
+      "kind": "books",
+      "language": "en",
+      "version": "2026-09-29",
+      "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+      "authors": [
+        "Agatha Christie"
+      ],
+      "titles": [
+        "The Secret of Chimneys",
+        "The murder of Roger Ackroyd",
+        "The Mysterious Affair at Styles",
+        "The Secret Adversary",
+        "Poirot Investigates",
+        "The Murder on the Links",
+        "The Man in the Brown Suit",
+        "The Big Four",
+        "The mystery of the Blue Train",
+        "The Seven Dials mystery",
+        "The Missing Will",
+        "The Hunter's Lodge Case",
+        "The Plymouth Express Affair",
+        "The mysterious Mr. Quin",
+        "Murder at the vicarage",
+        "Partners in crime",
+        "Giants' bread"
+      ],
+      "works": 17,
+      "quotes": 0,
+      "passages": 55846,
+      "bytes": 18139211,
+      "textBytes": 5389301
+    },
+    {
       "id": "gutenberg-classics-en",
       "path": "gutenberg-classics-en/manifest.json",
       "name": "Gutenberg classics",
