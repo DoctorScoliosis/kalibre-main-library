@@ -2,7 +2,7 @@
   "kalibreDataset": 1,
   "id": "romance-selections-en",
   "name": "Romance Selections",
-  "version": "2026-09-28",
+  "version": "2026-10-01",
   "language": "en",
   "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
   "source": {
@@ -184,7 +184,6 @@
   "derived": {
     "passageIndex": "passage-index.json",
     "frequencies": "frequencies.json",
-    "normaliserVersion": 3,
-    "maxPerCategory": null
+    "normaliserVersion": 3
   }
 }

@@ -11,7 +11,7 @@
       "name": "Agatha Christie's Public Domain Works",
       "kind": "books",
       "language": "en",
-      "version": "2026-09-29",
+      "version": "2026-10-01",
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Agatha Christie"
@@ -37,9 +37,9 @@
       ],
       "works": 17,
       "quotes": 0,
-      "passages": 55846,
-      "bytes": 18139211,
-      "textBytes": 5389301
+      "passages": 15685,
+      "bytes": 7675883,
+      "textBytes": 5389211
     },
     {
       "id": "gutenberg-classics-en",
@@ -47,7 +47,7 @@
       "name": "Gutenberg classics",
       "kind": "books",
       "language": "en",
-      "version": "2026-09-25",
+      "version": "2026-10-01",
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "F. Scott Fitzgerald",
@@ -74,8 +74,8 @@
       ],
       "works": 10,
       "quotes": 0,
-      "passages": 69774,
-      "bytes": 31179759,
+      "passages": 11170,
+      "bytes": 8150936,
       "textBytes": 7770604
     },
     {
@@ -84,7 +84,7 @@
       "name": "Extended Selections of Henry James",
       "kind": "books",
       "language": "en",
-      "version": "2026-09-28",
+      "version": "2026-10-01",
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Henry James"
@@ -119,8 +119,8 @@
       ],
       "works": 26,
       "quotes": 0,
-      "passages": 87672,
-      "bytes": 38831258,
+      "passages": 27094,
+      "bytes": 17496408,
       "textBytes": 11174060
     },
     {
@@ -129,7 +129,7 @@
       "name": "Romance Selections",
       "kind": "books",
       "language": "en",
-      "version": "2026-09-28",
+      "version": "2026-10-01",
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "R. D. Blackmore",
@@ -160,8 +160,8 @@
       ],
       "works": 14,
       "quotes": 0,
-      "passages": 98985,
-      "bytes": 48138786,
+      "passages": 20098,
+      "bytes": 16061703,
       "textBytes": 11574694
     }
   ]

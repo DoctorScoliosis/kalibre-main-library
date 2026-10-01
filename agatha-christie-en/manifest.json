@@ -2,7 +2,7 @@
   "kalibreDataset": 1,
   "id": "agatha-christie-en",
   "name": "Agatha Christie's Public Domain Works",
-  "version": "2026-09-29",
+  "version": "2026-10-01",
   "language": "en",
   "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
   "source": {
@@ -91,7 +91,7 @@
       "translator": null,
       "file": "works/pg58866.txt",
       "passages": "passages/pg58866.json",
-      "sha256": "a16f69a1f570a1fc1636bafc0a4c297b3be3ab9bc87576c5ca78c0e9db90873c",
+      "sha256": "cf689b95afbcef9392c9b6182edd989eba7529afaed640dbc00f72eb78460f3e",
       "sourceUrl": "https://www.gutenberg.org/cache/epub/58866/pg58866.txt",
       "wordCount": 59490
     },
@@ -220,7 +220,6 @@
   "derived": {
     "passageIndex": "passage-index.json",
     "frequencies": "frequencies.json",
-    "normaliserVersion": 3,
-    "maxPerCategory": null
+    "normaliserVersion": 3
   }
 }
