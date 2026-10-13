@@ -44,6 +44,37 @@
       "textBytes": 5389211
     },
     {
+      "id": "dostoyevsky-en",
+      "path": "dostoyevsky-en/manifest.json",
+      "name": "Dostoyevsky Selections",
+      "kind": "books",
+      "language": "en",
+      "version": "2026-10-13",
+      "revision": 1,
+      "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+      "authors": [
+        "Fyodor Dostoyevsky"
+      ],
+      "titles": [
+        "White nights, and other stories",
+        "Notes from the Underground",
+        "The Idiot",
+        "The Grand Inquisitor",
+        "The possessed",
+        "Short Stories",
+        "The Gambler",
+        "Poor Folk",
+        "The house of the dead",
+        "Stavrogin's Confession and The Plan of The Life of a Great Sinner",
+        "Uncle's Dream; and The Permanent Husband"
+      ],
+      "works": 11,
+      "quotes": 0,
+      "passages": 12771,
+      "bytes": 8852324,
+      "textBytes": 6005101
+    },
+    {
       "id": "gutenberg-classics-en",
       "path": "gutenberg-classics-en/manifest.json",
       "name": "Gutenberg classics",
