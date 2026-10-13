@@ -2,7 +2,9 @@
   "kalibreDataset": 1,
   "id": "romance-selections-en",
   "name": "Romance Selections",
-  "version": "2026-09-28",
+  "version": "2026-10-01",
+  "revision": 1,
+  "changes": "now 300 passages per length, about a third of the size; 'passages' on its card brings back more",
   "language": "en",
   "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
   "source": {
@@ -184,7 +186,38 @@
   "derived": {
     "passageIndex": "passage-index.json",
     "frequencies": "frequencies.json",
-    "normaliserVersion": 3,
-    "maxPerCategory": null
+    "normaliserVersion": 3
+  },
+  "files": {
+    "frequencies.json": "167eb04492c3401ea876778d4612d1d38ca24fc5843c710e3ac05e084682066e",
+    "passage-index.json": "b8f7e8aeb0922b0754b287452ff3bd2dccc48a27ef3c58112060df515d5262b2",
+    "passages/pg105.json": "2b6ee2299ecada715e503b26f2700a94cc1aae816f129b9936bbd0c40b3609a0",
+    "passages/pg121.json": "ca209426c704f22330534633003b9c4466aa868b56446001319d4740f0fac0cc",
+    "passages/pg1260.json": "6bbdb3350bd2f414050c0c1993ecbda0547f09462d65370754e220409ff823fa",
+    "passages/pg141.json": "017aea8b55de2cd59e7468e0f61412c1fbe064be078486feced2ce9bc2e59628",
+    "passages/pg145.json": "2d53f023fad49feba0206ff709dce8c45d45e5e7539afa8ec1e8120674e749ae",
+    "passages/pg158.json": "f8a6218bd8eff25cc99acbfc17c44e5032e4969846d89f5c2e022701b9722a4e",
+    "passages/pg16389.json": "7518d17f4eb4365cda9b7bb54c1039b7495367af8ecdc4d98ef791aa44dc3788",
+    "passages/pg17460.json": "7be3e3b76f2563e0c6b182416021dc8dd7909a6ab7353bfbb9e58223c96ebc4e",
+    "passages/pg45.json": "ddd13448018cd479e8db65d096a4b2a44c9ceb2bd61e6a5bc877a499a943f84f",
+    "passages/pg583.json": "0281973dbe0f73dfa7a84683a3f3266a9525d445d0556d878379e7d52e45af6a",
+    "passages/pg60.json": "8bba104037237e30eef91db3bb86f9f901e90e54d185769467e1bc90ba8e7c09",
+    "passages/pg67979.json": "aac5fb45e35a559af0d7f8a2bd83194cad519772eaaddd69ed0921f53784c9c6",
+    "passages/pg768.json": "09cb27528c29a2fd6f1b9693b97fa1a9a0a66067b06b776523c234ad4433d98d",
+    "passages/pg9182.json": "0ef8aab9221913f595e1bed10e806d2b7a164e63217e7f91f64b9d82bff65ea1",
+    "works/pg105.txt": "68ffe4f0e8b00b461ed5b86a296ce7dc342ea336ba40558bfcf74b22bf5dd77f",
+    "works/pg121.txt": "68fc130df7d33124a1534281f246e6b2dfd3df234d856c172849b03a76527c93",
+    "works/pg1260.txt": "6e6eb00a3c5c030af64d54ccc4603ae4faace941b909f18c3380233af287cf79",
+    "works/pg141.txt": "fc5b02615bf6ca036f855f3f1d9f962cec2fd557367a8d73da4a16ff7a41b9cd",
+    "works/pg145.txt": "4fa807cd8a6cc516049d30b3aa5139fbd75e850dbeb595b8917a95d3001ad4a4",
+    "works/pg158.txt": "cfd034c0c7282a34622d04002527aecbfa7101e2fbbc32f2c30f8092cf9bd953",
+    "works/pg16389.txt": "3a07c497e10936be06c082bf94bbbc9c0eeb4caffee8d8f70aea4d3b3e3457b1",
+    "works/pg17460.txt": "aaf5b16e281c81c11c624350afcd58d66077df0b3db44d53c3c5374540314138",
+    "works/pg45.txt": "50fd102f8759af6c702ddad0910f7cefe41d05e09e02f8155a399ae83744b30c",
+    "works/pg583.txt": "5372577be62e71c0b8e4b050d0aec25780d85fe4d1a391bb4afc7b0cdb046fb1",
+    "works/pg60.txt": "b50e1886f53b5dd786f487e0a8eb72c4a808e8137a73dc3cdf16298fb95395ac",
+    "works/pg67979.txt": "abc21814f3da270ef98b95621e59f9ca724d442d8c27f1dd3ee27034646c5d1a",
+    "works/pg768.txt": "ae95be4ce1a8bf13cb184f96f71619adda59b3cbac7d9dd40c2a8e04845d4efc",
+    "works/pg9182.txt": "bcf1403034efc5dcea6e62508d317bfb0f703edf44f71f8f5597e0468338ce86"
   }
 }

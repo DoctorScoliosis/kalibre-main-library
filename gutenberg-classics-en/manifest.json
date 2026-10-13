@@ -2,7 +2,9 @@
   "kalibreDataset": 1,
   "id": "gutenberg-classics-en",
   "name": "Gutenberg classics",
-  "version": "2026-09-25",
+  "version": "2026-10-01",
+  "revision": 1,
+  "changes": "now 300 passages per length, about a third of the size; 'passages' on its card brings back more",
   "language": "en",
   "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
   "source": {
@@ -136,7 +138,30 @@
   "derived": {
     "passageIndex": "passage-index.json",
     "frequencies": "frequencies.json",
-    "normaliserVersion": 3,
-    "maxPerCategory": null
+    "normaliserVersion": 3
+  },
+  "files": {
+    "frequencies.json": "22c0b8d1a96503c4b02914158c474b399fbd024c48c273a9cd6727b83168aa42",
+    "passage-index.json": "4af1ef3c9dfcbeb64db21731db850fb0e304d1b9b21559252d78c583c6931aee",
+    "passages/pg1080.json": "d39ac3ed4c593a61c118887bf0f0b2aab2f162b26131febd6262c2bf131ca52e",
+    "passages/pg1513.json": "ff8095e09b6a7a04f8d02d9b83c1dca8205ed663e71e548be986167c26eb0ff9",
+    "passages/pg161.json": "b42b1c96b2e173577d117ae8f5c575b661661164fe9a1037d43db8e7db006a1d",
+    "passages/pg2600.json": "bb95854c10cffa9408b8aad77a8de4185131c1adbe740200ea98965805b29e4a",
+    "passages/pg28054.json": "166a5f5967fc23d5e27b215a0f68d98bfbbda332a8fb8403b6c63a2ba8dfa9d9",
+    "passages/pg33.json": "a3411707dd28705d09569d3441cc96b96274838fef43bd8167c0358a09f31c00",
+    "passages/pg5200.json": "a04079ae29368abb785a0e5389caf2f6ced68cac4f0b165b729aa69b68b52ff0",
+    "passages/pg53419.json": "c17b19e0ef964c6e3da6616525613d8b4d00a7f9ef0fe0183b86fc597f70e2a9",
+    "passages/pg64317.json": "a2ac14762bbb32ea7fac1a51435e12f0ad27c0acfba416e952a5f2ac59399892",
+    "passages/pg98.json": "3c3b6b7f07cd48aa24b3ba63423c9ada3932f7104b4832d59ec6d538527b0027",
+    "works/pg1080.txt": "fda1ec31561db27fc064c8934ecdd0944995ff81799f9be4c9d29789b7147d1c",
+    "works/pg1513.txt": "973eb18bf4f7ecb32f2def1a549a467d5cebb5bc3be2068e41b33b16cf6fd438",
+    "works/pg161.txt": "d77f017ac011a361346cc9ceae685d6a18d147cc9abf11e8dcb46be085efcead",
+    "works/pg2600.txt": "989953e6692d2c39d33ba8d6a7aa41172a0b3730afb19094e7220de84ca87f9c",
+    "works/pg28054.txt": "471dcc432c2c4abb70b6405448954c5059dd11c893364e10c9d948232b97adfa",
+    "works/pg33.txt": "df62d12585d8761df80c8be4fc18a652d803caaa844b6569b5aea333eb9858a7",
+    "works/pg5200.txt": "04cb8a77c95313e31c81e43bb5b943ee40a3ae0a610c5b6c48285e574430d1fa",
+    "works/pg53419.txt": "cc2da9dcb78ddf8321c51fb445a0d9fa7545751e0c73b6f350f7a171fa5c3e8d",
+    "works/pg64317.txt": "39801757a555afdd4829ddd77aa782ca0089d83cb934c3e850830614e5c2034f",
+    "works/pg98.txt": "6c23338d51e3342d6303951195b8825c7a039e7bc7a7233275e566898501e559"
   }
 }
