@@ -75,6 +75,31 @@
       "textBytes": 6005101
     },
     {
+      "id": "edgar-allan-poe-en",
+      "path": "edgar-allan-poe-en/manifest.json",
+      "name": "The Works of Edgar Allan Poe, Vol's. 1-5",
+      "kind": "books",
+      "language": "en",
+      "version": "2026-10-13",
+      "revision": 1,
+      "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+      "authors": [
+        "Edgar Allan Poe"
+      ],
+      "titles": [
+        "The Works of Edgar Allan Poe — Volume 1",
+        "The Works of Edgar Allan Poe — Volume 2",
+        "The Works of Edgar Allan Poe — Volume 3",
+        "The Works of Edgar Allan Poe — Volume 4",
+        "The Works of Edgar Allan Poe — Volume 5"
+      ],
+      "works": 5,
+      "quotes": 0,
+      "passages": 6286,
+      "bytes": 4596545,
+      "textBytes": 2402775
+    },
+    {
       "id": "gutenberg-classics-en",
       "path": "gutenberg-classics-en/manifest.json",
       "name": "Gutenberg classics",
