@@ -163,6 +163,35 @@
       "passages": 98985,
       "bytes": 48138786,
       "textBytes": 11574694
+    },
+    {
+      "id": "sherlock-holmes-en",
+      "path": "sherlock-holmes-en/manifest.json",
+      "name": "All Public Domain Sherlock Holmes Books",
+      "kind": "books",
+      "language": "en",
+      "version": "2026-10-13",
+      "revision": 1,
+      "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+      "authors": [
+        "Arthur Conan Doyle"
+      ],
+      "titles": [
+        "The Adventures of Sherlock Holmes",
+        "A Study in Scarlet",
+        "The Hound of the Baskervilles",
+        "The Return of Sherlock Holmes",
+        "The Sign of the Four",
+        "The Memoirs of Sherlock Holmes",
+        "The Valley of Fear",
+        "The case-book of Sherlock Holmes",
+        "His last bow"
+      ],
+      "works": 9,
+      "quotes": 0,
+      "passages": 10627,
+      "bytes": 6139590,
+      "textBytes": 3547873
     }
   ]
 }

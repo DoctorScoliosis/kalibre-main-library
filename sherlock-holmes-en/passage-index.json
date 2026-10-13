@@ -1,0 +1,65 @@
+{
+  "pg1661": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 278,
+    "massive": 73
+  },
+  "pg244": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 163,
+    "massive": 55
+  },
+  "pg2852": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 179,
+    "massive": 60
+  },
+  "pg108": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 300,
+    "massive": 119
+  },
+  "pg2097": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 140,
+    "massive": 51
+  },
+  "pg834": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 202,
+    "massive": 49
+  },
+  "pg3289": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 227,
+    "massive": 58
+  },
+  "pg69700": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 277,
+    "massive": 66
+  },
+  "pg2350": {
+    "short": 300,
+    "medium": 300,
+    "long": 300,
+    "huge": 185,
+    "massive": 45
+  }
+}
