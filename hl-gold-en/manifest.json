@@ -1,0 +1,152 @@
+{
+  "kalibreDataset": 1,
+  "id": "hl-gold-en",
+  "name": "Works of H. L. Gold",
+  "version": "2026-10-14",
+  "revision": 1,
+  "language": "en",
+  "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+  "source": {
+    "type": "gutenberg",
+    "ids": [
+      31892,
+      51844,
+      32413,
+      32128,
+      51834,
+      62324,
+      31986,
+      50988,
+      62325
+    ],
+    "fetchedAt": "2026-10-14"
+  },
+  "works": [
+    {
+      "id": "pg31892",
+      "title": "The Old Die Rich",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg31892.txt",
+      "passages": "passages/pg31892.json",
+      "sha256": "cf38b39d403ebe1236b6bba514b001060ce5496cfec48906f604307d196bc1df",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/31892/pg31892.txt",
+      "wordCount": 20029
+    },
+    {
+      "id": "pg51844",
+      "title": "Someone to watch over me",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg51844.txt",
+      "passages": "passages/pg51844.json",
+      "sha256": "bee3592bbfc05162a20dd40e49ac4bb70030542dd600ce215d6b5d6d21f96687",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/51844/pg51844.txt",
+      "wordCount": 20969
+    },
+    {
+      "id": "pg32413",
+      "title": "At the Post",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg32413.txt",
+      "passages": "passages/pg32413.json",
+      "sha256": "cabc0a46b68f5c34738fb54a66d6c7c94b95e1c043fa3e2bcbb883c3345531c9",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/32413/pg32413.txt",
+      "wordCount": 12519
+    },
+    {
+      "id": "pg32128",
+      "title": "The Enormous Room",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg32128.txt",
+      "passages": "passages/pg32128.json",
+      "sha256": "2730084a997aafb105b6e5675b19736cfc4cdccef533a5711e3ca28ae0726c40",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/32128/pg32128.txt",
+      "wordCount": 22495
+    },
+    {
+      "id": "pg51834",
+      "title": "Never Come Midnight",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg51834.txt",
+      "passages": "passages/pg51834.json",
+      "sha256": "8e04cc2305c9ff51501601f18758a8fa1eb1c5ef510f1ff997fc2744facf61f8",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/51834/pg51834.txt",
+      "wordCount": 16218
+    },
+    {
+      "id": "pg62324",
+      "title": "Grifters' Asteroid",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg62324.txt",
+      "passages": "passages/pg62324.json",
+      "sha256": "acdf29dc9c8a5b3e73b5010e90e42075a6b62496c7f707aa50b941a5c212c659",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/62324/pg62324.txt",
+      "wordCount": 5385
+    },
+    {
+      "id": "pg31986",
+      "title": "No Charge for Alterations",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg31986.txt",
+      "passages": "passages/pg31986.json",
+      "sha256": "7f0bcf97182515f4cdd1be353337e356c8fc0652e8abefea1bd485ef468a0f6f",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/31986/pg31986.txt",
+      "wordCount": 8126
+    },
+    {
+      "id": "pg50988",
+      "title": "Bodyguard",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg50988.txt",
+      "passages": "passages/pg50988.json",
+      "sha256": "1f0bc9e9497f28c6fa72f9c048ceaac7b8648d5c39882071eccf7e400b7cf115",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/50988/pg50988.txt",
+      "wordCount": 15611
+    },
+    {
+      "id": "pg62325",
+      "title": "Menace of the Mists",
+      "author": "H. L. Gold",
+      "translator": null,
+      "file": "works/pg62325.txt",
+      "passages": "passages/pg62325.json",
+      "sha256": "e49766b1400725656ce652c74f04fd3abb58ccfb9e230877fe7626d9b4fb9905",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/62325/pg62325.txt",
+      "wordCount": 6723
+    }
+  ],
+  "derived": {
+    "passageIndex": "passage-index.json",
+    "frequencies": "frequencies.json",
+    "normaliserVersion": 3
+  },
+  "files": {
+    "frequencies.json": "aad8aba2bff05434ded19c038c917af39cfc91db1a8cab54e49844a0fd4afc16",
+    "passage-index.json": "9a4892bbc58ef7331f475494f75c44f74af45b2a91b7070abe0604710da3612a",
+    "passages/pg31892.json": "12ccf71e0a1f3a5ed0b941968908a0dad038918e86980386277907eab46f9aa7",
+    "passages/pg31986.json": "2051c34c69e7f49b288e5cfe032a93886f68ed39c6283cd7a0f33047161169f4",
+    "passages/pg32128.json": "c4c67f4273eed9f87d8c12c2db07b68b3606ef4e3ca3d328abfac84ec16e2724",
+    "passages/pg32413.json": "120b693cc0d0b81e46a400dbe872d2fc1b5adcfdd720603383476511add46b82",
+    "passages/pg50988.json": "b9f4c476add15ac8e143d536a3b727856ede46d66278cfea245008346b3d0ebf",
+    "passages/pg51834.json": "472b5c99f7dc8935314da54116645a1bed1458f2f776b1ef11bc3d82775f191b",
+    "passages/pg51844.json": "b5292f71ef8e1b082482a34144d5a92ee0f1a59e8d02935dd9630fa7bee447c2",
+    "passages/pg62324.json": "6cfd1618cd838194809b0943f0885cccfb72ecd42f8df1a619bd6399687618c4",
+    "passages/pg62325.json": "68a698913c74dc33d2447a6c16bbbc06e2548bcfa40f1af1d9c28a1f2b91ebc2",
+    "works/pg31892.txt": "545184d6709c6990ad2fbf4bbea981bf1d99637ac97b7ae1fcfc59cf9348c1c0",
+    "works/pg31986.txt": "3a00072dc54834f0dcf6466558f79e32851a41df0870a44d8b4936ad002e9449",
+    "works/pg32128.txt": "3a799b5da4ca6814a6ca8016fd7a2d165bd5ab8a3f62f59cf4248d785ac15cc1",
+    "works/pg32413.txt": "4505ced98b30699bd86cd926a89ebf6cd67780b312a3915e04b1b42f352275f5",
+    "works/pg50988.txt": "142fe72008c993d9ac9c16d1ba6be9c801ee2fedea5e31296c030236d37f93b6",
+    "works/pg51834.txt": "d2f76057dd1adea3cdb6d865e965eb75906d7b60b238bf256421d2ca48d4fdde",
+    "works/pg51844.txt": "230dad38f68b536a370abb204c469601d4ca692b422e204a4cf49ccca2dd20af",
+    "works/pg62324.txt": "fb9131d56b31ad660e30e408cc267934ca17e8b944367739ec49abc1ff9ac3f8",
+    "works/pg62325.txt": "5192ec7342c00a6231f0ab0981cdf9bd057b42712170f0a171031f97ec6477d4"
+  }
+}

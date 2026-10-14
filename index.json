@@ -186,6 +186,35 @@
       "textBytes": 11174060
     },
     {
+      "id": "hl-gold-en",
+      "path": "hl-gold-en/manifest.json",
+      "name": "Works of H. L. Gold",
+      "kind": "books",
+      "language": "en",
+      "version": "2026-10-14",
+      "revision": 1,
+      "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+      "authors": [
+        "H. L. Gold"
+      ],
+      "titles": [
+        "The Old Die Rich",
+        "Someone to watch over me",
+        "At the Post",
+        "The Enormous Room",
+        "Never Come Midnight",
+        "Grifters' Asteroid",
+        "No Charge for Alterations",
+        "Bodyguard",
+        "Menace of the Mists"
+      ],
+      "works": 9,
+      "quotes": 0,
+      "passages": 6186,
+      "bytes": 2490370,
+      "textBytes": 720340
+    },
+    {
       "id": "hp-lovecraft-en",
       "path": "hp-lovecraft-en/manifest.json",
       "name": "H.P. Lovecraft Works",
