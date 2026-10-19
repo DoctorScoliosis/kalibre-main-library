@@ -1,0 +1,254 @@
+{
+  "pg103": {
+    "short": 227,
+    "medium": 257,
+    "long": 197,
+    "huge": 138,
+    "massive": 91
+  },
+  "pg164": {
+    "short": 283,
+    "medium": 320,
+    "long": 247,
+    "huge": 173,
+    "massive": 105
+  },
+  "pg18857": {
+    "short": 261,
+    "medium": 295,
+    "long": 227,
+    "huge": 160,
+    "massive": 109
+  },
+  "pg1268": {
+    "short": 376,
+    "medium": 424,
+    "long": 327,
+    "huge": 231,
+    "massive": 150
+  },
+  "pg27894": {
+    "short": 146,
+    "medium": 165,
+    "long": 126,
+    "huge": 87,
+    "massive": 35
+  },
+  "pg60242": {
+    "short": 176,
+    "medium": 200,
+    "long": 153,
+    "huge": 107,
+    "massive": 36
+  },
+  "pg8992": {
+    "short": 135,
+    "medium": 153,
+    "long": 94,
+    "huge": 68,
+    "massive": 18
+  },
+  "pg16085": {
+    "short": 98,
+    "medium": 111,
+    "long": 52,
+    "huge": 11,
+    "massive": 4
+  },
+  "pg9618": {
+    "short": 198,
+    "medium": 224,
+    "long": 172,
+    "huge": 120,
+    "massive": 44
+  },
+  "pg63650": {
+    "short": 212,
+    "medium": 239,
+    "long": 184,
+    "huge": 128,
+    "massive": 70
+  },
+  "pg13527": {
+    "short": 204,
+    "medium": 231,
+    "long": 177,
+    "huge": 124,
+    "massive": 67
+  },
+  "pg16344": {
+    "short": 239,
+    "medium": 270,
+    "long": 208,
+    "huge": 146,
+    "massive": 100
+  },
+  "pg67829": {
+    "short": 217,
+    "medium": 245,
+    "long": 188,
+    "huge": 132,
+    "massive": 80
+  },
+  "pg1842": {
+    "short": 273,
+    "medium": 309,
+    "long": 238,
+    "huge": 167,
+    "massive": 114
+  },
+  "pg28657": {
+    "short": 231,
+    "medium": 261,
+    "long": 201,
+    "huge": 140,
+    "massive": 96
+  },
+  "pg1698": {
+    "short": 211,
+    "medium": 239,
+    "long": 184,
+    "huge": 128,
+    "massive": 75
+  },
+  "pg22759": {
+    "short": 228,
+    "medium": 257,
+    "long": 198,
+    "huge": 127,
+    "massive": 35
+  },
+  "pg8991": {
+    "short": 308,
+    "medium": 348,
+    "long": 268,
+    "huge": 189,
+    "massive": 130
+  },
+  "pg11556": {
+    "short": 217,
+    "medium": 245,
+    "long": 189,
+    "huge": 132,
+    "massive": 90
+  },
+  "pg12051": {
+    "short": 303,
+    "medium": 342,
+    "long": 264,
+    "huge": 185,
+    "massive": 127
+  },
+  "pg33516": {
+    "short": 232,
+    "medium": 262,
+    "long": 201,
+    "huge": 141,
+    "massive": 95
+  },
+  "pg1355": {
+    "short": 196,
+    "medium": 221,
+    "long": 170,
+    "huge": 119,
+    "massive": 80
+  },
+  "pg12901": {
+    "short": 286,
+    "medium": 322,
+    "long": 249,
+    "huge": 175,
+    "massive": 83
+  },
+  "pg3808": {
+    "short": 210,
+    "medium": 237,
+    "long": 182,
+    "huge": 127,
+    "massive": 87
+  },
+  "pg3809": {
+    "short": 194,
+    "medium": 219,
+    "long": 168,
+    "huge": 117,
+    "massive": 80
+  },
+  "pg3091": {
+    "short": 272,
+    "medium": 307,
+    "long": 236,
+    "huge": 166,
+    "massive": 114
+  },
+  "pg1652": {
+    "short": 211,
+    "medium": 239,
+    "long": 184,
+    "huge": 128,
+    "massive": 74
+  },
+  "pg16457": {
+    "short": 273,
+    "medium": 308,
+    "long": 237,
+    "huge": 167,
+    "massive": 114
+  },
+  "pg19362": {
+    "short": 89,
+    "medium": 102,
+    "long": 43,
+    "huge": 11,
+    "massive": 3
+  },
+  "pg10339": {
+    "short": 248,
+    "medium": 280,
+    "long": 216,
+    "huge": 151,
+    "massive": 99
+  },
+  "pg46597": {
+    "short": 317,
+    "medium": 358,
+    "long": 276,
+    "huge": 195,
+    "massive": 134
+  },
+  "pg29413": {
+    "short": 313,
+    "medium": 353,
+    "long": 272,
+    "huge": 192,
+    "massive": 92
+  },
+  "pg1353": {
+    "short": 282,
+    "medium": 318,
+    "long": 245,
+    "huge": 172,
+    "massive": 118
+  },
+  "pg3526": {
+    "short": 268,
+    "medium": 303,
+    "long": 233,
+    "huge": 164,
+    "massive": 112
+  },
+  "pg2083": {
+    "short": 340,
+    "medium": 384,
+    "long": 296,
+    "huge": 209,
+    "massive": 89
+  },
+  "pg83": {
+    "short": 268,
+    "medium": 303,
+    "long": 233,
+    "huge": 164,
+    "massive": 87
+  }
+}

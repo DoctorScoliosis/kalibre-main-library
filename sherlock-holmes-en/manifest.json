@@ -1,0 +1,152 @@
+{
+  "kalibreDataset": 1,
+  "id": "sherlock-holmes-en",
+  "name": "All Public Domain Sherlock Holmes Books",
+  "version": "2026-10-19",
+  "revision": 2,
+  "language": "en",
+  "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+  "source": {
+    "type": "gutenberg",
+    "ids": [
+      1661,
+      244,
+      2852,
+      108,
+      2097,
+      834,
+      3289,
+      69700,
+      2350
+    ],
+    "fetchedAt": "2026-10-13"
+  },
+  "works": [
+    {
+      "id": "pg1661",
+      "title": "The Adventures of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg1661.txt",
+      "passages": "passages/pg1661.json",
+      "sha256": "01caf41d6bf1e9c3a04c1ca49099ddbc48c027f296ab03cce884c6d94449c989",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+      "wordCount": 102227
+    },
+    {
+      "id": "pg244",
+      "title": "A Study in Scarlet",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg244.txt",
+      "passages": "passages/pg244.json",
+      "sha256": "fdbb151a89d7de7ae3885a3e3fd58d0f469e8eaa7142d43456a2c41be841401a",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/244/pg244.txt",
+      "wordCount": 42008
+    },
+    {
+      "id": "pg2852",
+      "title": "The Hound of the Baskervilles",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg2852.txt",
+      "passages": "passages/pg2852.json",
+      "sha256": "1480155f1d45af9007e41e306e68d8ef1eeb5e2c88d7ad52204b700339020fdc",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/2852/pg2852.txt",
+      "wordCount": 58342
+    },
+    {
+      "id": "pg108",
+      "title": "The Return of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg108.txt",
+      "passages": "passages/pg108.json",
+      "sha256": "ee4ea0f82daaf5d26298e20124f843004ba97771ca9451d07949ed7b180021de",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/108/pg108.txt",
+      "wordCount": 109664
+    },
+    {
+      "id": "pg2097",
+      "title": "The Sign of the Four",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg2097.txt",
+      "passages": "passages/pg2097.json",
+      "sha256": "a78da4f3313d5dfac5ae1af0d1beca3e90d9622ad5ba2b76bcdfc66552619267",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/2097/pg2097.txt",
+      "wordCount": 42464
+    },
+    {
+      "id": "pg834",
+      "title": "The Memoirs of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg834.txt",
+      "passages": "passages/pg834.json",
+      "sha256": "5097bd60314f16b2785a6c734194bb0e8b2f029cfbd8ec7f4557682c36007045",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/834/pg834.txt",
+      "wordCount": 93819
+    },
+    {
+      "id": "pg3289",
+      "title": "The Valley of Fear",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg3289.txt",
+      "passages": "passages/pg3289.json",
+      "sha256": "29a83d880cfc0903131f028d7ac0a00c62ee875e798fbe6c57dae9ec7f344491",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/3289/pg3289.txt",
+      "wordCount": 56185
+    },
+    {
+      "id": "pg69700",
+      "title": "The case-book of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg69700.txt",
+      "passages": "passages/pg69700.json",
+      "sha256": "4d28f63a20f9c59ba41ca9a4de7572d136df2fac7d0a0bd8d1962c73347911dc",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/69700/pg69700.txt",
+      "wordCount": 80814
+    },
+    {
+      "id": "pg2350",
+      "title": "His last bow",
+      "author": "Arthur Conan Doyle",
+      "translator": null,
+      "file": "works/pg2350.txt",
+      "passages": "passages/pg2350.json",
+      "sha256": "c3cd593bd7fab97679ea5e62644338b3606cf8dbf9b6bc9f603f37cb038d4b4b",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/2350/pg2350.txt",
+      "wordCount": 57531
+    }
+  ],
+  "derived": {
+    "passageIndex": "passage-index.json",
+    "frequencies": "frequencies.json",
+    "normaliserVersion": 4
+  },
+  "files": {
+    "frequencies.json": "ea870122ca32917e8d1bf7f603e9ca514b83dde38b7b28fb9fa6e71e26f179f2",
+    "passage-index.json": "b33fb7f09f0581a9645143bce8411525ec6b49f1489dc2b1dac562e11f6fb281",
+    "passages/pg108.json": "7bf6556090fce3693e303eb07f7cb2f7f648146ac1b847a699cce35dccfded2d",
+    "passages/pg1661.json": "6802bf23a5a58ab52a60d665b294552721930c49ee88a063f586c177fac4088c",
+    "passages/pg2097.json": "aeb35220d4d560417e1d093a352aef8fe90d9a579de648c1d94b84fe558e5d40",
+    "passages/pg2350.json": "0a663c4941337f039e40af1c1cd7dc43d8a069dc01215e5705debef8b25dc3c7",
+    "passages/pg244.json": "9b4a5cf23ccdc365fe9e93635a98da2114eac5577b93973f2c103b740357a471",
+    "passages/pg2852.json": "f84d6438ce2ce1bf3b9a5cf06bf8ea0779af7e12f72d3ee607ea64d1075dd659",
+    "passages/pg3289.json": "3afaa6852446cc25c22b480ee41c274ace861631c48292188e9ac0734ca7acc7",
+    "passages/pg69700.json": "21e6876952bdef67d9aff7b2687847af0720225200ef8b02db6aa96c60392b95",
+    "passages/pg834.json": "a9d982d63e73e3c33add4e56ddb3f8aee722e025ea7636e0df9f11031c497ab2",
+    "works/pg108.txt": "f2f5e49bb7d4c3441197e37f01f65c242ab63672b465d413df1d89beb22fa356",
+    "works/pg1661.txt": "bad7e4b706a7983a843e5a473194c545600641e3b4b6ce12a1511865a44aad51",
+    "works/pg2097.txt": "30b148026e88f1538c8ddcf5e60cfa15f1cb03a5db839df7cf9ae98dd155ced6",
+    "works/pg2350.txt": "2c43dc6f8ab6d74e9f549998c5c77427f210bc4d277e520bf59c233611f38a35",
+    "works/pg244.txt": "5921e75be5185b3a37c6758d343b3df44c52aad1e904849f2ba40d0557300828",
+    "works/pg2852.txt": "b37ffcd57b91930d86325081540e29e2f9dbaad0aa3102010fa46e5ce32631da",
+    "works/pg3289.txt": "d59d0130d312aa851e9cfa7f9f7e2cdea37f2687845881c34b410d90eb9331d1",
+    "works/pg69700.txt": "d3db46035b28e3d603651c31583439c5758bf090691b9e5dd1b2c2cd25e6701b",
+    "works/pg834.txt": "e7f5f8e0c49d0e30e46aaf3702c227adf6cab12e4526727e061d78627bb0c6a3"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "kalibreDataset": 1,
+  "id": "dostoyevsky-en",
+  "name": "Dostoyevsky Selections",
+  "version": "2026-10-19",
+  "revision": 2,
+  "language": "en",
+  "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
+  "source": {
+    "type": "gutenberg",
+    "ids": [
+      36034,
+      600,
+      2638,
+      8578,
+      8117,
+      40745,
+      2197,
+      2302,
+      37536,
+      57050,
+      38241
+    ],
+    "fetchedAt": "2026-10-13"
+  },
+  "works": [
+    {
+      "id": "pg36034",
+      "title": "White nights, and other stories",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "Constance Garnett",
+      "file": "works/pg36034.txt",
+      "passages": "passages/pg36034.json",
+      "sha256": "af933d6db4fcf3c194b16a1cef5b644be74cf1c09b129758996f0625e19c80c2",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/36034/pg36034.txt",
+      "wordCount": 117470
+    },
+    {
+      "id": "pg600",
+      "title": "Notes from the Underground",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "Constance Garnett",
+      "file": "works/pg600.txt",
+      "passages": "passages/pg600.json",
+      "sha256": "cdd036a4fcc36f33ebb3d5904f343c7d64c4c0e010a1ae5f7dc22081bd5fc046",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/600/pg600.txt",
+      "wordCount": 43974
+    },
+    {
+      "id": "pg2638",
+      "title": "The Idiot",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "Eva Martin",
+      "file": "works/pg2638.txt",
+      "passages": "passages/pg2638.json",
+      "sha256": "497199fa2b9b2c3defab06b0dd46ad9a5f02c73f7c39b2aa9035d3bbd104d406",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/2638/pg2638.txt",
+      "wordCount": 229426
+    },
+    {
+      "id": "pg8578",
+      "title": "The Grand Inquisitor",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "H. P. Blavatsky",
+      "file": "works/pg8578.txt",
+      "passages": "passages/pg8578.json",
+      "sha256": "f136700913829590f076d8ff343f526b043733b6ef3fec53e3bbfd5b46fd5631",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/8578/pg8578.txt",
+      "wordCount": 8738
+    },
+    {
+      "id": "pg8117",
+      "title": "The possessed",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "Constance Garnett",
+      "file": "works/pg8117.txt",
+      "passages": "passages/pg8117.json",
+      "sha256": "26b522d50e11f0108efcc7ac33dbf4118b1c7d66a3b69361e23cb565efd0826c",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/8117/pg8117.txt",
+      "wordCount": 246261
+    },
+    {
+      "id": "pg40745",
+      "title": "Short Stories",
+      "author": "Fyodor Dostoyevsky",
+      "translator": null,
+      "file": "works/pg40745.txt",
+      "passages": "passages/pg40745.json",
+      "sha256": "88946b81de5df54b015ef670971f713c06dcc496a0198aea1f1457fb9edfc138",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/40745/pg40745.txt",
+      "wordCount": 78582
+    },
+    {
+      "id": "pg2197",
+      "title": "The Gambler",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "C. J. Hogarth",
+      "file": "works/pg2197.txt",
+      "passages": "passages/pg2197.json",
+      "sha256": "ce030301b388c2301f1e1224068ea7e9b53a8423f4db53f9c1a4a43f5545dda3",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/2197/pg2197.txt",
+      "wordCount": 58601
+    },
+    {
+      "id": "pg2302",
+      "title": "Poor Folk",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "C. J. Hogarth",
+      "file": "works/pg2302.txt",
+      "passages": "passages/pg2302.json",
+      "sha256": "78ac6c74ac0236452705a0d89286948452a5842007f15fd46fb9f1f8a2021762",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/2302/pg2302.txt",
+      "wordCount": 43127
+    },
+    {
+      "id": "pg37536",
+      "title": "The house of the dead",
+      "author": "Fyodor Dostoyevsky",
+      "translator": null,
+      "file": "works/pg37536.txt",
+      "passages": "passages/pg37536.json",
+      "sha256": "8a2863c7896b0f8bfee3a24b786d378097a0f2a20d1f507f027af708434ff9b7",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/37536/pg37536.txt",
+      "wordCount": 119666
+    },
+    {
+      "id": "pg57050",
+      "title": "Stavrogin's Confession and The Plan of The Life of a Great Sinner",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "S. S. Koteliansky",
+      "file": "works/pg57050.txt",
+      "passages": "passages/pg57050.json",
+      "sha256": "7f97949c40389b1f1d47b5a52250d50035e5e187514fdc788cbc9c54640d5f89",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/57050/pg57050.txt",
+      "wordCount": 27281
+    },
+    {
+      "id": "pg38241",
+      "title": "Uncle's Dream; and The Permanent Husband",
+      "author": "Fyodor Dostoyevsky",
+      "translator": "Frederick Whishaw",
+      "file": "works/pg38241.txt",
+      "passages": "passages/pg38241.json",
+      "sha256": "f0834712034f04bee18bb71fa7ec03c652a98240e095cdb3373c8fb6d200d7ad",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/38241/pg38241.txt",
+      "wordCount": 94578
+    }
+  ],
+  "derived": {
+    "passageIndex": "passage-index.json",
+    "frequencies": "frequencies.json",
+    "normaliserVersion": 4
+  },
+  "files": {
+    "frequencies.json": "14827e7862f0b66f5ae5dcda777fcda49777cd7f8f04dfacd719bf0e48bf3267",
+    "passage-index.json": "5eba63f99c333204dc5b6116554b55abd99ac18af075b1b4183728c2c9204a48",
+    "passages/pg2197.json": "fd78c162565111e60b52cf592ef0084dcf23610d047949ced263f4e8eb123102",
+    "passages/pg2302.json": "98f9a0f5e3a2e95809be5df13738c58779b249dd447e025fd0e5f7f6bf2bcf17",
+    "passages/pg2638.json": "fb2ec3253ed8dd6b85ebdb85b458abedd5229aca093700d49c4f515b2591000e",
+    "passages/pg36034.json": "c860eb02d091ca4e5e719a841c4800753351b0c4a7159642e4b1ff3ff45358ce",
+    "passages/pg37536.json": "5f56f22215f5269cf3fd64f06b363874b6dd34da94f8f2b6b1237aa72dd7a642",
+    "passages/pg38241.json": "dfcaf6b06979a2588704343c2f3dcc13a66782af192524bde03e1248460595a4",
+    "passages/pg40745.json": "a49b09013de42c9480846c27c5009bee369591fdd113dec24e45ad0afc9ec86b",
+    "passages/pg57050.json": "fbf8076cc1bb83df4b60804ce9e9f1cf303dc6bac879d64d9f77c65159b1204f",
+    "passages/pg600.json": "0be9a22436690d57f00f02245366d73e5b4840d4ccb688bdd3f7c97e495d6fc4",
+    "passages/pg8117.json": "5698a0b0475d23336d2e62f69ec8f2272d7511db40b1d011dbce5a19c88c65ad",
+    "passages/pg8578.json": "ccebeb4cc345a2eaf18d4dea124535e028504eb60979e724b9d25b43d12dd6f0",
+    "works/pg2197.txt": "ba293ebbe6dd6e910972854061dd733663f0e9c24f72923103ae5aa67e39e360",
+    "works/pg2302.txt": "ff5b872902403249195a8923e1d125e6bcdddcdb77d7e16e4c734f66bd4ce898",
+    "works/pg2638.txt": "9cbf599f520bd7b9d27c76322ebed9c136190e4e0f2b71bfc0ae91b8825eec02",
+    "works/pg36034.txt": "2c6847b86e898ce2520a1306a8c1cd3554501b67e5f1f8d0c988590d3fb291c9",
+    "works/pg37536.txt": "7695845d357b88a350c95f16a2addf16e37cc145bd56cab1e2dfd4db9fe94477",
+    "works/pg38241.txt": "4fc34ca5196663675980a6b6a2e44e71577ddc246512468f5e203445e6bf5a4c",
+    "works/pg40745.txt": "a3d110d7ce25ab3b75cb34ef0cf8a3b18cc91850ef7979c5573ab6a7f79217f6",
+    "works/pg57050.txt": "d05068b26713605358b7785311d9a849ac50ea2bc1557ff581cf21c2c582abe4",
+    "works/pg600.txt": "a2aab5def9135afbb76c870ef132954ecaecf61dd49192482928fda168156195",
+    "works/pg8117.txt": "6ebf522cf5c036ab09e5c9577d06f38e1c706b9b2849e448d43606f2cedeca10",
+    "works/pg8578.txt": "8ca7208bd4b37a4987a99f912dab9881346219c13bfdc865b148db78c68b4fa2"
+  }
+}

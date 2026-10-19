@@ -1,0 +1,37 @@
+{
+  "pg2147": {
+    "short": 261,
+    "medium": 295,
+    "long": 227,
+    "huge": 137,
+    "massive": 72
+  },
+  "pg2148": {
+    "short": 269,
+    "medium": 303,
+    "long": 234,
+    "huge": 164,
+    "massive": 112
+  },
+  "pg2149": {
+    "short": 280,
+    "medium": 316,
+    "long": 244,
+    "huge": 171,
+    "massive": 117
+  },
+  "pg2150": {
+    "short": 256,
+    "medium": 290,
+    "long": 223,
+    "huge": 156,
+    "massive": 107
+  },
+  "pg2151": {
+    "short": 232,
+    "medium": 263,
+    "long": 202,
+    "huge": 141,
+    "massive": 97
+  }
+}
