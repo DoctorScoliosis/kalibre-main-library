@@ -2,8 +2,8 @@
   "kalibreDataset": 1,
   "id": "edgar-allan-poe-en",
   "name": "The Works of Edgar Allan Poe, Vol's. 1-5",
-  "version": "2026-10-13",
-  "revision": 1,
+  "version": "2026-10-19",
+  "revision": 2,
   "language": "en",
   "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
   "source": {
@@ -77,16 +77,16 @@
   "derived": {
     "passageIndex": "passage-index.json",
     "frequencies": "frequencies.json",
-    "normaliserVersion": 3
+    "normaliserVersion": 4
   },
   "files": {
     "frequencies.json": "fbd1cc2a039a3812ada8bef97e63f3bd1a6d32152d1716869ed69f80b275e3bc",
-    "passage-index.json": "2017a3246aa56181899760fadddb02261f8ed263eb3eed74048d2ff351091805",
-    "passages/pg2147.json": "1ad55fa560c476c4fc46a2a857d6647fca2969cd30029a55cab7d814b210cebd",
-    "passages/pg2148.json": "574a32d37ef48d67d202557ec8707b54a1b6a9b0968a1fe9a28ac08984654d3b",
-    "passages/pg2149.json": "1c0b918406b8fbb2e011bc4b74005458d42ba916ecb79dddccc1ab9b67b1b53b",
-    "passages/pg2150.json": "313de5a1bff3a1c232bd3b93c4faab1e5b273924010806917840693356b93b78",
-    "passages/pg2151.json": "a34dd6fa3641c93dc3cc4a2187c0401a5cbe7f77e6c34a54747c6e9567e5dd97",
+    "passage-index.json": "ab0d4494ce4e34c054f50514f5d589d7ae300854a8b616402673b76277c585d6",
+    "passages/pg2147.json": "13351a6ef55c4269e3e7f47645442b7aae177e52b207fe606fc98eaedd7bf23e",
+    "passages/pg2148.json": "c8f3deed3a57e9b5b368b46c86ca4de833a7155114eeb8a23dfaeba230d7d305",
+    "passages/pg2149.json": "37fea78f0c6dcd88e1ec88f648293bf1ba1c26cc4b8c622efaab294445da1085",
+    "passages/pg2150.json": "a1c18a1e1f3936b55ab5ad1ab1423eff5c4ae38ec8907843babc130cdeed615e",
+    "passages/pg2151.json": "8b6840e799f440cb2a70b831358e9484331782e324f6560b68e735ccf47b56fb",
     "works/pg2147.txt": "4f77ee80e3f76537ffd0b01ae4f0fc4760ae3d958355581d11fac646d9cf1fc7",
     "works/pg2148.txt": "5fee3b9dd6a82e7a9d605ad589b3b30ddcafb4f2440d6b84000f72629712a8b6",
     "works/pg2149.txt": "0ba10f430e840a71a1648f55e161c0c932a7099ee4e8f353ed325eff71dda90d",

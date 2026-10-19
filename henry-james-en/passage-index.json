@@ -1,183 +1,183 @@
 {
   "pg177": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 300,
-    "massive": 183
+    "short": 320,
+    "medium": 361,
+    "long": 279,
+    "huge": 196,
+    "massive": 135
   },
   "pg2833": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 242,
-    "massive": 139
+    "short": 302,
+    "medium": 341,
+    "long": 263,
+    "huge": 185,
+    "massive": 127
   },
   "pg2834": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 207,
+    "short": 298,
+    "medium": 337,
+    "long": 260,
+    "huge": 183,
     "massive": 124
   },
   "pg6354": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 28,
-    "massive": 195
+    "short": 312,
+    "medium": 352,
+    "long": 272,
+    "huge": 191,
+    "massive": 131
   },
   "pg432": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 284,
-    "massive": 252
+    "short": 350,
+    "medium": 395,
+    "long": 305,
+    "huge": 215,
+    "massive": 148
   },
   "pg38776": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
+    "short": 272,
+    "medium": 307,
+    "long": 237,
     "huge": 59,
     "massive": 76
   },
   "pg38035": {
-    "short": 286,
-    "medium": 300,
-    "long": 300,
+    "short": 251,
+    "medium": 284,
+    "long": 218,
     "huge": 47,
     "massive": 51
   },
   "pg1144": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
+    "short": 178,
+    "medium": 202,
+    "long": 155,
     "huge": 66,
     "massive": 61
   },
   "pg58938": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 26,
-    "massive": 104
+    "short": 248,
+    "medium": 280,
+    "long": 216,
+    "huge": 151,
+    "massive": 103
   },
   "pg898": {
-    "short": 300,
-    "medium": 300,
-    "long": 233,
+    "short": 155,
+    "medium": 176,
+    "long": 134,
     "huge": 55,
     "massive": 29
   },
   "pg68717": {
     "short": 140,
-    "medium": 300,
+    "medium": 389,
     "long": 300,
-    "huge": 18,
-    "massive": 300
+    "huge": 212,
+    "massive": 146
   },
   "pg208": {
-    "short": 300,
-    "medium": 300,
-    "long": 165,
+    "short": 146,
+    "medium": 166,
+    "long": 127,
     "huge": 56,
     "massive": 25
   },
   "pg178": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
+    "short": 248,
+    "medium": 280,
+    "long": 215,
     "huge": 131,
     "massive": 77
   },
   "pg2870": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 157,
+    "short": 231,
+    "medium": 261,
+    "long": 201,
+    "huge": 140,
     "massive": 69
   },
   "pg2426": {
-    "short": 295,
-    "medium": 266,
+    "short": 116,
+    "medium": 132,
     "long": 70,
     "huge": 15,
     "massive": 3
   },
   "pg643": {
-    "short": 174,
-    "medium": 300,
-    "long": 161,
+    "short": 126,
+    "medium": 144,
+    "long": 109,
     "huge": 20,
     "massive": 27
   },
   "pg38424": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 56,
-    "massive": 76
+    "short": 318,
+    "medium": 359,
+    "long": 277,
+    "huge": 195,
+    "massive": 134
   },
   "pg20085": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
-    "huge": 300,
-    "massive": 300
+    "short": 392,
+    "medium": 443,
+    "long": 342,
+    "huge": 241,
+    "massive": 150
   },
   "pg1193": {
-    "short": 258,
-    "medium": 300,
-    "long": 239,
+    "short": 150,
+    "medium": 170,
+    "long": 130,
     "huge": 28,
     "massive": 30
   },
   "pg2436": {
-    "short": 191,
-    "medium": 300,
-    "long": 140,
+    "short": 121,
+    "medium": 138,
+    "long": 105,
     "huge": 20,
     "massive": 21
   },
   "pg63369": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
+    "short": 268,
+    "medium": 302,
+    "long": 233,
     "huge": 131,
-    "massive": 146
+    "massive": 112
   },
   "pg25767": {
-    "short": 224,
-    "medium": 300,
-    "long": 300,
+    "short": 174,
+    "medium": 196,
+    "long": 151,
     "huge": 40,
     "massive": 40
   },
   "pg7529": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
+    "short": 215,
+    "medium": 243,
+    "long": 186,
     "huge": 68,
     "massive": 51
   },
   "pg21968": {
-    "short": 244,
-    "medium": 300,
-    "long": 300,
+    "short": 215,
+    "medium": 243,
+    "long": 187,
     "huge": 107,
-    "massive": 114
+    "massive": 89
   },
   "pg2869": {
-    "short": 262,
-    "medium": 300,
-    "long": 275,
-    "huge": 0,
-    "massive": 0
+    "short": 142,
+    "medium": 161,
+    "long": 123,
+    "huge": 85,
+    "massive": 49
   },
   "pg72355": {
-    "short": 300,
-    "medium": 300,
-    "long": 300,
+    "short": 226,
+    "medium": 256,
+    "long": 197,
     "huge": 127,
     "massive": 90
   }

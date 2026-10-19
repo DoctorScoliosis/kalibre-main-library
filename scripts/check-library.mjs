@@ -8,8 +8,8 @@
 //   - every dataset folder has a manifest of the right shape, and its id is the folder's;
 //   - `files` in the manifest lists a SHA-256 for every file but the manifest, matching
 //     what is on disk, with nothing extra left in the folder; each text matches its own `sha256`;
-//   - passage counts match the passage files, and no text has more passages per length
-//     than the dataset's recorded cap (300 when none is recorded);
+//   - passage counts match the passage files, and per-category limits match the
+//     dataset's normaliser: v3 defaults to 300, while v4 uses adaptive budgets;
 //   - `index.json` is exactly what the folders say (it is never edited by hand);
 //   - with --base: a dataset whose files differ from the base ref's has a higher `revision`,
 //     and a revision never goes down.
@@ -22,9 +22,16 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const NORMALISER = 3;
+const NORMALISER = 4;
 const DEFAULT_CAP = 300;
 const CATEGORIES = ['short', 'medium', 'long', 'huge', 'massive'];
+const CATEGORY_SCALING = {
+  short: { floor: 30, factor: 0.8, max: 400 },
+  medium: { floor: 35, factor: 0.9, max: 450 },
+  long: { floor: 25, factor: 0.7, max: 350 },
+  huge: { floor: 15, factor: 0.5, max: 250 },
+  massive: { floor: 8, factor: 0.35, max: 150 }
+};
 const sha256 = (text) => createHash('sha256').update(text).digest('hex');
 const problems = [];
 const notes = [];
@@ -52,6 +59,14 @@ async function walk(dir, prefix = '') {
 const unique = (values) => [...new Set(values.filter(Boolean))];
 const sum = (values) => values.reduce((total, value) => total + value, 0);
 const size = async (path) => { try { return (await stat(path)).size; } catch { return 0; } };
+
+function adaptiveBudget(wordCount, category, flowPass, ceiling = null) {
+  const spec = CATEGORY_SCALING[category];
+  const raw = Math.round((spec.floor + spec.factor * Math.sqrt(wordCount)) * (flowPass ? 1.3 : 1));
+  const maxBound = ceiling !== null ? ceiling : Math.round(spec.max * (flowPass ? 1.25 : 1));
+  const budget = Math.max(spec.floor, Math.min(raw, maxBound));
+  return ceiling !== null ? Math.min(budget, ceiling) : budget;
+}
 
 // One dataset's entry in index.json, as the librarian writes it.
 async function summarise(folder, manifest) {
@@ -105,16 +120,34 @@ async function checkDataset(id, folder, manifest) {
   }
 
   if (manifest.kind === 'quotes') return;
-  const cap = manifest.derived?.maxPerCategory === undefined ? DEFAULT_CAP : manifest.derived.maxPerCategory;
+  const derived = manifest.derived ?? {};
+  const normaliserVersion = Number.isSafeInteger(derived.normaliserVersion) ? derived.normaliserVersion : 0;
+  const hasRecordedCap = Object.hasOwn(derived, 'maxPerCategory');
+  const recordedCap = derived.maxPerCategory;
+  if (hasRecordedCap && recordedCap !== null && (!Number.isSafeInteger(recordedCap) || recordedCap < 0)) {
+    fail(where, 'derived.maxPerCategory must be a non-negative whole number or null');
+  }
+  const legacyCap = hasRecordedCap ? recordedCap : DEFAULT_CAP;
   const passageIndex = (await readJson(join(folder, manifest.derived?.passageIndex ?? 'passage-index.json'))) ?? {};
   for (const work of manifest.works ?? []) {
     const text = await readFile(join(folder, work.file), 'utf8').catch(() => null);
     if (text === null) fail(where, `${work.file} is missing`);
     else if (sha256(text.replace(/\n$/, '')) !== work.sha256) fail(where, `${work.file} doesn't match its own sha256`);
+    const wordCount = Number.isSafeInteger(work.wordCount) && work.wordCount >= 0
+      ? work.wordCount
+      : (text?.trim() ? text.trim().split(/\s+/).length : 0);
     const counts = passageIndex[work.id];
     if (!counts) { fail(where, `${work.id} is not in the passage index`); continue; }
     for (const category of CATEGORIES) {
-      if (cap !== null && (counts[category] ?? 0) > cap) fail(where, `${work.id} has ${counts[category]} ${category} passages; the cap is ${cap}`);
+      let cap = legacyCap;
+      if (normaliserVersion >= 4) {
+        cap = recordedCap === null
+          ? null
+          : adaptiveBudget(wordCount, category, Boolean(derived.flowPass), typeof recordedCap === 'number' ? recordedCap : null);
+      }
+      if (cap !== null && (counts[category] ?? 0) > cap) {
+        fail(where, `${work.id} has ${counts[category]} ${category} passages; the ${normaliserVersion >= 4 ? 'v4 adaptive budget' : 'cap'} is ${cap}`);
+      }
     }
     const passages = await readJson(join(folder, work.passages));
     const found = Array.isArray(passages) ? passages.length : -1;
@@ -166,8 +199,10 @@ async function main() {
   }
 
   const about = await readJson(join(ROOT, 'library.json'));
+  const latestDatasetDate = manifests.map((manifest) => manifest.version).filter((value) => /^\d{4}-\d{2}-\d{2}$/.test(value ?? '')).sort().at(-1);
   const expected = {
     kalibreDatasetIndex: 1,
+    ...(about?.updatedAt ? { updatedAt: about.updatedAt } : latestDatasetDate ? { updatedAt: latestDatasetDate } : {}),
     ...(about?.name ? { library: { name: about.name, description: about.description ?? '' } } : {}),
     datasets: await Promise.all(manifests.filter((manifest) => manifest.id).map((manifest) => summarise(join(ROOT, manifest.id), manifest)))
   };

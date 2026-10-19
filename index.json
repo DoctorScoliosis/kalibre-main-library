@@ -1,5 +1,6 @@
 {
   "kalibreDatasetIndex": 1,
+  "updatedAt": "2026-10-19",
   "library": {
     "name": "kalibre main library",
     "description": "Public-domain books for Kalibre."
@@ -11,9 +12,8 @@
       "name": "Agatha Christie's Public Domain Works",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-01",
-      "revision": 1,
-      "changes": "now 300 passages per length, about a third of the size; 'passages' on its card brings back more",
+      "version": "2026-10-19",
+      "revision": 3,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Agatha Christie"
@@ -39,8 +39,8 @@
       ],
       "works": 17,
       "quotes": 0,
-      "passages": 15685,
-      "bytes": 7679439,
+      "passages": 12919,
+      "bytes": 6405047,
       "textBytes": 5389211
     },
     {
@@ -49,8 +49,8 @@
       "name": "Dostoyevsky Selections",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-13",
-      "revision": 1,
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Fyodor Dostoyevsky"
@@ -70,8 +70,8 @@
       ],
       "works": 11,
       "quotes": 0,
-      "passages": 12771,
-      "bytes": 8852324,
+      "passages": 10942,
+      "bytes": 6861350,
       "textBytes": 6005101
     },
     {
@@ -80,8 +80,8 @@
       "name": "The Works of Edgar Allan Poe, Vol's. 1-5",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-13",
-      "revision": 1,
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Edgar Allan Poe"
@@ -95,8 +95,8 @@
       ],
       "works": 5,
       "quotes": 0,
-      "passages": 6286,
-      "bytes": 4596545,
+      "passages": 5169,
+      "bytes": 3573044,
       "textBytes": 2402775
     },
     {
@@ -105,9 +105,8 @@
       "name": "Gutenberg classics",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-01",
-      "revision": 1,
-      "changes": "now 300 passages per length, about a third of the size; 'passages' on its card brings back more",
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "F. Scott Fitzgerald",
@@ -134,8 +133,8 @@
       ],
       "works": 10,
       "quotes": 0,
-      "passages": 11170,
-      "bytes": 8153144,
+      "passages": 9438,
+      "bytes": 6031660,
       "textBytes": 7770604
     },
     {
@@ -144,9 +143,8 @@
       "name": "Extended Selections of Henry James",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-01",
-      "revision": 1,
-      "changes": "now 300 passages per length, about a third of the size; 'passages' on its card brings back more",
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Henry James"
@@ -181,8 +179,8 @@
       ],
       "works": 26,
       "quotes": 0,
-      "passages": 27094,
-      "bytes": 17501636,
+      "passages": 23186,
+      "bytes": 14732340,
       "textBytes": 11174060
     },
     {
@@ -191,8 +189,8 @@
       "name": "Works of H. L. Gold",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-14",
-      "revision": 1,
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "H. L. Gold"
@@ -210,8 +208,8 @@
       ],
       "works": 9,
       "quotes": 0,
-      "passages": 6186,
-      "bytes": 2490370,
+      "passages": 3750,
+      "bytes": 1818086,
       "textBytes": 720340
     },
     {
@@ -220,8 +218,8 @@
       "name": "H.P. Lovecraft Works",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-13",
-      "revision": 1,
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "H. P. Lovecraft",
@@ -259,8 +257,8 @@
       ],
       "works": 25,
       "quotes": 0,
-      "passages": 13156,
-      "bytes": 7234401,
+      "passages": 9752,
+      "bytes": 5783313,
       "textBytes": 2168836
     },
     {
@@ -269,8 +267,8 @@
       "name": "Atlas of Jules Verne Works",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-14",
-      "revision": 1,
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Jules Verne",
@@ -316,8 +314,8 @@
       ],
       "works": 36,
       "quotes": 0,
-      "passages": 42698,
-      "bytes": 26143083,
+      "passages": 33656,
+      "bytes": 19846113,
       "textBytes": 15242783
     },
     {
@@ -326,8 +324,8 @@
       "name": "Chamber of Robert W. Chambers Works",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-14",
-      "revision": 1,
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Robert W. Chambers"
@@ -383,8 +381,8 @@
       ],
       "works": 47,
       "quotes": 0,
-      "passages": 56042,
-      "bytes": 33384391,
+      "passages": 45594,
+      "bytes": 26036155,
       "textBytes": 21027060
     },
     {
@@ -393,9 +391,8 @@
       "name": "Romance Selections",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-01",
-      "revision": 1,
-      "changes": "now 300 passages per length, about a third of the size; 'passages' on its card brings back more",
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "R. D. Blackmore",
@@ -426,8 +423,8 @@
       ],
       "works": 14,
       "quotes": 0,
-      "passages": 20098,
-      "bytes": 16064651,
+      "passages": 17905,
+      "bytes": 11590510,
       "textBytes": 11574694
     },
     {
@@ -436,8 +433,8 @@
       "name": "All Public Domain Sherlock Holmes Books",
       "kind": "books",
       "language": "en",
-      "version": "2026-10-13",
-      "revision": 1,
+      "version": "2026-10-19",
+      "revision": 2,
       "licence": "Public domain in the USA (Project Gutenberg). Check the copyright laws of your country before redistributing.",
       "authors": [
         "Arthur Conan Doyle"
@@ -455,8 +452,8 @@
       ],
       "works": 9,
       "quotes": 0,
-      "passages": 10627,
-      "bytes": 6139590,
+      "passages": 8396,
+      "bytes": 4883553,
       "textBytes": 3547873
     }
   ]
