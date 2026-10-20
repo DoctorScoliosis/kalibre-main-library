@@ -1,0 +1,10 @@
+{
+  "name": "kalibre-main-library",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/check-library.mjs && node --test scripts/check-library.test.js",
+    "check": "node scripts/check-library.mjs"
+  }
+}

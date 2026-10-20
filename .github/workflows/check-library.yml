@@ -39,3 +39,4 @@ jobs:
           else
             node scripts/check-library.mjs
           fi
+          node --test scripts/check-library.test.js
