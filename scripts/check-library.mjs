@@ -6,6 +6,10 @@
 // Kalibre reads this repository's default branch directly, so whatever is
 // merged is what people download. The checks:
 //   - every dataset folder has a manifest of the right shape, and its id is the folder's;
+//   - no dataset manifests declare prohibited sources (e.g. source.type: 'wikipedia', D389);
+//   - every dataset manifest declares a recognised, valid language code;
+//   - dataset folder name suffixes agree with their manifest language (e.g. -en);
+//   - the library as a whole contains exactly one language across all datasets;
 //   - `files` in the manifest lists a SHA-256 for every file but the manifest, matching
 //     what is on disk, with nothing extra left in the folder; each text matches its own `sha256`;
 //   - passage counts match the passage files, and per-category limits match the
@@ -21,21 +25,43 @@ import { readdir, readFile, stat } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const NORMALISER = 4;
-const DEFAULT_CAP = 300;
-const CATEGORIES = ['short', 'medium', 'long', 'huge', 'massive'];
-const CATEGORY_SCALING = {
+export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+export const NORMALISER = 4;
+export const DEFAULT_CAP = 300;
+export const CATEGORIES = ['short', 'medium', 'long', 'huge', 'massive'];
+export const CATEGORY_SCALING = {
   short: { floor: 30, factor: 0.8, max: 400 },
   medium: { floor: 35, factor: 0.9, max: 450 },
   long: { floor: 25, factor: 0.7, max: 350 },
   huge: { floor: 15, factor: 0.5, max: 250 },
   massive: { floor: 8, factor: 0.35, max: 150 }
 };
+
+export const PROHIBITED_SOURCE_TYPES = Object.freeze(['wikipedia']);
+
+export function isValidLanguageCode(code) {
+  if (!code || typeof code !== 'string') return false;
+  return /^[a-z]{2,3}(?:-[a-zA-Z0-9]+)*$/i.test(code.trim());
+}
+
+export function extractLanguageFromId(id) {
+  if (!id || typeof id !== 'string') return null;
+  const parts = id.trim().split('-');
+  if (parts.length < 2) return null;
+  if (parts.length >= 3) {
+    const twoPart = `${parts[parts.length - 2]}-${parts[parts.length - 1]}`.toLowerCase();
+    if (/^[a-z]{2}-(?:[a-z]{2}|[0-9]{3}|[a-z]{4})$/i.test(twoPart) && isValidLanguageCode(twoPart)) {
+      return twoPart;
+    }
+  }
+  const last = parts[parts.length - 1].toLowerCase();
+  if (/^[a-z]{2,3}$/i.test(last) && isValidLanguageCode(last)) {
+    return last;
+  }
+  return null;
+}
+
 const sha256 = (text) => createHash('sha256').update(text).digest('hex');
-const problems = [];
-const notes = [];
-const fail = (where, message) => problems.push(`${where}: ${message}`);
 
 async function readJson(path) {
   try {
@@ -94,7 +120,7 @@ async function summarise(folder, manifest) {
   };
 }
 
-async function checkDataset(id, folder, manifest) {
+export async function checkDataset(id, folder, manifest, { fail, notes }) {
   const where = id;
   if (manifest.kalibreDataset !== 1) fail(where, 'manifest is not a Kalibre dataset (kalibreDataset: 1)');
   if (manifest.id !== id) fail(where, `manifest id is "${manifest.id}", not the folder's`);
@@ -103,6 +129,25 @@ async function checkDataset(id, folder, manifest) {
   if (manifest.changes !== undefined && (typeof manifest.changes !== 'string' || !manifest.changes.trim() || manifest.changes.length > 200 || /[\r\n]/.test(manifest.changes))) {
     fail(where, 'changes must be one line of at most 200 characters');
   }
+
+  // D389: Reject Wikipedia datasets from Main Library
+  if (manifest.source?.type === 'wikipedia' || PROHIBITED_SOURCE_TYPES.includes(manifest.source?.type)) {
+    fail(where, 'Kalibre Main Library prohibits Wikipedia datasets (decision D389); full books, essays, and standalone quotes only');
+  }
+
+  // Language code validation and directory suffix agreement
+  if (!manifest.language || typeof manifest.language !== 'string' || !isValidLanguageCode(manifest.language)) {
+    fail(where, `manifest declares invalid or missing language code: "${manifest.language}"`);
+  } else {
+    const lang = manifest.language.toLowerCase();
+    const suffix = extractLanguageFromId(id);
+    if (!suffix) {
+      fail(where, `dataset directory "${id}" lacks a language suffix (e.g. "-${lang}")`);
+    } else if (suffix !== lang) {
+      fail(where, `dataset directory suffix "-${suffix}" does not match manifest language "${lang}"`);
+    }
+  }
+
   if ((manifest.derived?.normaliserVersion ?? 0) < NORMALISER) {
     notes.push(`${where}: built by normaliser v${manifest.derived?.normaliserVersion ?? 0}, current is v${NORMALISER}; rebuild it with the librarian to republish`);
   }
@@ -155,14 +200,14 @@ async function checkDataset(id, folder, manifest) {
   }
 }
 
-function git(...args) {
-  return execFileSync('git', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, stdio: ['ignore', 'pipe', 'pipe'] });
+function git(rootDir, ...args) {
+  return execFileSync('git', args, { cwd: rootDir, encoding: 'utf8', maxBuffer: 1 << 28, stdio: ['ignore', 'pipe', 'pipe'] });
 }
 
 // Against the base ref: changed files need a higher revision (and one never goes down).
-async function checkAgainst(base, manifests) {
+async function checkAgainst(rootDir, base, manifests, { fail, notes }) {
   try {
-    git('rev-parse', '--verify', `${base}^{commit}`);
+    git(rootDir, 'rev-parse', '--verify', `${base}^{commit}`);
   } catch {
     notes.push(`base ${base} isn't available here, so revisions weren't compared`);
     return;
@@ -170,15 +215,15 @@ async function checkAgainst(base, manifests) {
   for (const manifest of manifests) {
     const id = manifest.id;
     let before = null;
-    try { before = JSON.parse(git('show', `${base}:${id}/manifest.json`)); } catch { continue; }
+    try { before = JSON.parse(git(rootDir, 'show', `${base}:${id}/manifest.json`)); } catch { continue; }
     const baseRevision = Number.isSafeInteger(before.revision) ? before.revision : 0;
-    const names = (ref) => git('ls-tree', '-r', '--name-only', ref, '--', `${id}/`).split('\n').filter(Boolean).map((path) => path.slice(id.length + 1)).filter((path) => path !== 'manifest.json');
+    const names = (ref) => git(rootDir, 'ls-tree', '-r', '--name-only', ref, '--', `${id}/`).split('\n').filter(Boolean).map((path) => path.slice(id.length + 1)).filter((path) => path !== 'manifest.json');
     const was = names(base);
-    const now = (await walk(join(ROOT, id))).filter((path) => path !== 'manifest.json');
+    const now = (await walk(join(rootDir, id))).filter((path) => path !== 'manifest.json');
     let changed = was.length !== now.length || was.some((path, index) => path !== now[index]);
     for (const path of now) {
       if (changed) break;
-      if (git('rev-parse', `${base}:${id}/${path}`).trim() !== git('hash-object', join(id, path)).trim()) changed = true;
+      if (git(rootDir, 'rev-parse', `${base}:${id}/${path}`).trim() !== git(rootDir, 'hash-object', join(id, path)).trim()) changed = true;
     }
     if (!Number.isSafeInteger(manifest.revision)) continue;
     if (manifest.revision < baseRevision) fail(id, `revision went down, from ${baseRevision} to ${manifest.revision}`);
@@ -186,38 +231,71 @@ async function checkAgainst(base, manifests) {
   }
 }
 
-async function main() {
-  const flag = process.argv.indexOf('--base');
-  const base = flag > -1 ? process.argv[flag + 1] : null;
-  const folders = (await readdir(ROOT, { withFileTypes: true })).filter((entry) => entry.isDirectory() && !entry.name.startsWith('.') && entry.name !== 'scripts' && entry.name !== 'node_modules').map((entry) => entry.name).sort();
+export async function checkLibrary(rootDir = ROOT, { base = null } = {}) {
+  const problems = [];
+  const notes = [];
+  const fail = (where, message) => problems.push(`${where}: ${message}`);
+
+  const folders = (await readdir(rootDir, { withFileTypes: true }))
+    .filter((entry) => entry.isDirectory() && !entry.name.startsWith('.') && entry.name !== 'scripts' && entry.name !== 'node_modules')
+    .map((entry) => entry.name)
+    .sort();
+
   const manifests = [];
   for (const id of folders) {
-    const manifest = await readJson(join(ROOT, id, 'manifest.json'));
+    const manifest = await readJson(join(rootDir, id, 'manifest.json'));
     if (!manifest) { fail(id, 'folder has no manifest.json'); continue; }
     manifests.push(manifest);
-    await checkDataset(id, join(ROOT, id), manifest);
+    await checkDataset(id, join(rootDir, id), manifest, { fail, notes });
   }
 
-  const about = await readJson(join(ROOT, 'library.json'));
+  // Validate single library language across all datasets
+  const libraryLanguages = new Set(manifests.map((m) => m.language?.toLowerCase()).filter(Boolean));
+  if (libraryLanguages.size > 1) {
+    fail('library', `Kalibre Main Library must contain exactly one language across all datasets; found: ${[...libraryLanguages].sort().join(', ')}`);
+  }
+
+  const about = await readJson(join(rootDir, 'library.json'));
+  if (about?.language) {
+    const declared = about.language.toLowerCase();
+    for (const manifest of manifests) {
+      if (manifest.language && manifest.language.toLowerCase() !== declared) {
+        fail(manifest.id, `dataset language "${manifest.language}" does not match library.json language "${declared}"`);
+      }
+    }
+  }
+
   const latestDatasetDate = manifests.map((manifest) => manifest.version).filter((value) => /^\d{4}-\d{2}-\d{2}$/.test(value ?? '')).sort().at(-1);
   const expected = {
     kalibreDatasetIndex: 1,
     ...(about?.updatedAt ? { updatedAt: about.updatedAt } : latestDatasetDate ? { updatedAt: latestDatasetDate } : {}),
     ...(about?.name ? { library: { name: about.name, description: about.description ?? '' } } : {}),
-    datasets: await Promise.all(manifests.filter((manifest) => manifest.id).map((manifest) => summarise(join(ROOT, manifest.id), manifest)))
+    datasets: await Promise.all(manifests.filter((manifest) => manifest.id).map((manifest) => summarise(join(rootDir, manifest.id), manifest)))
   };
-  const index = await readJson(join(ROOT, 'index.json'));
-  if (JSON.stringify(index) !== JSON.stringify(expected)) fail('index.json', "isn't what the dataset folders say; regenerate it with the librarian, never by hand");
-
-  if (base) await checkAgainst(base, manifests);
-
-  for (const note of notes) console.log(`note: ${note}`);
-  if (problems.length) {
-    for (const problem of problems) console.error(`error: ${problem}`);
-    console.error(`\n${problems.length} problem${problems.length === 1 ? '' : 's'}.`);
-    process.exit(1);
+  const index = await readJson(join(rootDir, 'index.json'));
+  if (index && JSON.stringify(index) !== JSON.stringify(expected)) {
+    fail('index.json', "isn't what the dataset folders say; regenerate it with the librarian, never by hand");
   }
-  console.log(`${manifests.length} dataset${manifests.length === 1 ? '' : 's'} checked${base ? `, revisions compared with ${base}` : ''}.`);
+
+  if (base) await checkAgainst(rootDir, base, manifests, { fail, notes });
+
+  return { problems, notes, checkedCount: manifests.length };
 }
 
-main().catch((error) => { console.error(error.message); process.exit(2); });
+async function main() {
+  const flag = process.argv.indexOf('--base');
+  const base = flag > -1 ? process.argv[flag + 1] : null;
+  const result = await checkLibrary(ROOT, { base });
+
+  for (const note of result.notes) console.log(`note: ${note}`);
+  if (result.problems.length) {
+    for (const problem of result.problems) console.error(`error: ${problem}`);
+    console.error(`\n${result.problems.length} problem${result.problems.length === 1 ? '' : 's'}.`);
+    process.exit(1);
+  }
+  console.log(`${result.checkedCount} dataset${result.checkedCount === 1 ? '' : 's'} checked${base ? `, revisions compared with ${base}` : ''}.`);
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch((error) => { console.error(error.message); process.exit(2); });
+}
