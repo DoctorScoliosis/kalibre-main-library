@@ -3,7 +3,8 @@
   "updatedAt": "2026-10-19",
   "library": {
     "name": "kalibre main library",
-    "description": "Public-domain books for Kalibre."
+    "description": "Public-domain books for Kalibre.",
+    "language": "en"
   },
   "datasets": [
     {

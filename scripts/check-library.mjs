@@ -14,7 +14,8 @@
 //     what is on disk, with nothing extra left in the folder; each text matches its own `sha256`;
 //   - passage counts match the passage files, and per-category limits match the
 //     dataset's normaliser: v3 defaults to 300, while v4 uses adaptive budgets;
-//   - `index.json` is exactly what the folders say (it is never edited by hand);
+//   - `index.json` is exactly what the folders say (it is never edited by hand), including
+//     the library's language in its `library` block (D393), as the librarian writes it;
 //   - with --base: a dataset whose files differ from the base ref's has a higher `revision`,
 //     and a revision never goes down.
 // A dataset built by an older normaliser than NORMALISER is reported, not failed.
@@ -83,10 +84,25 @@ async function walk(dir, prefix = '') {
 }
 
 const unique = (values) => [...new Set(values.filter(Boolean))];
-const sum = (values) => values.reduce((total, value) => total + value, 0);
+
+// D393: a library has one language: library.json's own, else the one its dataset
+// folders' suffixes agree on, else the one its manifests agree on. The index's `library`
+// block copies it, exactly as the librarian writes it (null when none can be settled;
+// a disagreement is reported separately, as a library holding several languages).
+export function resolveLibraryLanguage(about, manifests) {
+  if (about?.language) return isValidLanguageCode(about.language) ? about.language.trim().toLowerCase() : null;
+  if (!manifests.length) return null;
+  const suffixes = manifests.map((manifest) => extractLanguageFromId(manifest.id)).filter(Boolean);
+  if (suffixes.length === manifests.length) return unique(suffixes).length === 1 ? suffixes[0] : null;
+  const languages = manifests.map((manifest) => manifest.language?.toLowerCase()).filter(Boolean);
+  if (languages.length === manifests.length) return unique(languages).length === 1 ? languages[0] : null;
+  return null;
+}
+
+const sum =(values) => values.reduce((total, value) => total + value, 0);
 const size = async (path) => { try { return (await stat(path)).size; } catch { return 0; } };
 
-function adaptiveBudget(wordCount, category, flowPass, ceiling = null) {
+export function adaptiveBudget(wordCount, category, flowPass, ceiling = null) {
   const spec = CATEGORY_SCALING[category];
   const raw = Math.round((spec.floor + spec.factor * Math.sqrt(wordCount)) * (flowPass ? 1.3 : 1));
   const maxBound = ceiling !== null ? ceiling : Math.round(spec.max * (flowPass ? 1.25 : 1));
@@ -256,6 +272,9 @@ export async function checkLibrary(rootDir = ROOT, { base = null } = {}) {
   }
 
   const about = await readJson(join(rootDir, 'library.json'));
+  if (about?.language && !isValidLanguageCode(about.language)) {
+    fail('library.json', `language "${about.language}" is not a valid language code`);
+  }
   if (about?.language) {
     const declared = about.language.toLowerCase();
     for (const manifest of manifests) {
@@ -266,10 +285,14 @@ export async function checkLibrary(rootDir = ROOT, { base = null } = {}) {
   }
 
   const latestDatasetDate = manifests.map((manifest) => manifest.version).filter((value) => /^\d{4}-\d{2}-\d{2}$/.test(value ?? '')).sort().at(-1);
+  const libraryLanguage = resolveLibraryLanguage(about, manifests);
+  const libraryBlock = about?.name
+    ? { name: about.name, description: about.description ?? '', ...(libraryLanguage ? { language: libraryLanguage } : {}) }
+    : libraryLanguage ? { language: libraryLanguage } : null;
   const expected = {
     kalibreDatasetIndex: 1,
     ...(about?.updatedAt ? { updatedAt: about.updatedAt } : latestDatasetDate ? { updatedAt: latestDatasetDate } : {}),
-    ...(about?.name ? { library: { name: about.name, description: about.description ?? '' } } : {}),
+    ...(libraryBlock ? { library: libraryBlock } : {}),
     datasets: await Promise.all(manifests.filter((manifest) => manifest.id).map((manifest) => summarise(join(rootDir, manifest.id), manifest)))
   };
   const index = await readJson(join(rootDir, 'index.json'));

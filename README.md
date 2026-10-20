@@ -42,13 +42,24 @@ Kalibre reads this repository's default branch directly, so a merge is a publica
 
 Run it yourself before pushing: `npm test` or `node scripts/check-library.mjs --base origin/master`.
 
+### Republishing at a newer normaliser
+
+When the librarian's normaliser version rises, `check` only notes the older datasets; every dataset is rebuilt to republish. In one pull request:
+
+1. Raise `NORMALISER` in `scripts/check-library.mjs` (it is the version the check expects) and rebuild every dataset from its stored texts: `dataset-library rebuild <datasetId> --out <this checkout>`, run from an empty directory (the librarian makes a `datasets` folder in the directory it is run from). Do not use `--refetch`: a normaliser change must not change a text.
+2. The librarian settles each dataset's `revision`, `version` and `files` itself, and rewrites `index.json` and `SOURCES.md`. A dataset it finds already up to date is left alone ("already up to date; nothing was written"), so running it again is safe.
+3. Run `npm test` and `node scripts/check-library.mjs --base origin/master`. The second also proves every changed dataset took a higher `revision`.
+4. With a Kalibre checkout and the librarian checkout beside it, prove the passages are what the normaliser makes: `node --import ./src/scripts/tools/alias-loader.mjs src/scripts/tools/library-rebuild-check.mjs <this checkout> --librarian <librarian checkout> --require-current` rebuilds every dataset and compares each file byte for byte, with Kalibre's and the librarian's normalisers both.
+
+Merging publishes it, so that step is the owner's.
+
 People see a dataset as an update when its `revision` is higher than theirs, and never when it is lower, so a rollback is published by rebuilding (a new, higher revision with the older content), never by reverting the files.
 
 ## The format
 
 A library is a folder, anywhere on the web, holding:
 
-- `index.json`: `{ "kalibreDatasetIndex": 1, "library": { "name", "description" }, "datasets": [ … ] }`, one summary per dataset (id, name, authors, titles, sizes, version, revision, changes).
+- `index.json`: `{ "kalibreDatasetIndex": 1, "library": { "name", "description", "language" }, "datasets": [ … ] }` (the library's one language, from `library.json` or from its dataset folders' suffixes; older readers ignore it), one summary per dataset (id, name, authors, titles, sizes, version, revision, changes).
 - `library.json` (optional): `{ "name": "…", "description": "…" }`, the library's name, copied into the index.
 - One folder per dataset: `manifest.json`, `passage-index.json`, `frequencies.json`, `passages/*.json` and `works/*.txt`.
 - In each manifest: `version` (the date people read), `revision` (a whole number that only goes up, which is what Kalibre compares), an optional one-line `changes`, and `files`, the SHA-256 of every file but the manifest, which Kalibre checks before saving a download.
